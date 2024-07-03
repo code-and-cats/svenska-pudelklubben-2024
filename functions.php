@@ -157,9 +157,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 //Post types
-add_action('init', 'spk_post_types');
+add_action('init', 'spk24_post_types');
 
-function spk_post_types() {
+function spk24_post_types() {
 
   //Aktuellt post type
   register_post_type('aktuellt', array(
