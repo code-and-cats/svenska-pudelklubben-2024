@@ -17,12 +17,8 @@ body {
   background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 50vh;
-}
-
-.hero-container {
-  text-align: center;
+  padding-left: 10vw;
 }
 
 .main-heading {
@@ -32,11 +28,14 @@ body {
 }
 
 .secondary-heading,
-.wp-block-post-title {
+.article-heading {
   font-size: 24px;
-  padding-top: 2px;
   font-weight: 200;
   text-transform: uppercase;
+}
+
+.article-heading {
+  padding-top: 1em;
 }
 
 .tagline {
@@ -46,21 +45,16 @@ body {
   padding-top: 1rem;
 }
 
-button,
-.wp-block-button__link {
+button {
   font-weight: 600;
-  background-color: white;
-  border: 2px solid white;
-  color: #b02b08;
+  background-color: transparent;
+  border: none;
+  color: black;
   border-radius: 6px;
-  padding: 10px 12px;
+  padding: 10px 0;
   margin: 10px 0px;
   text-align: center;
-  text-decoration: none;
-}
-
-.btn .wp-block-button__link {
-  color: #335987;
+  text-decoration: underline;
 }
 
 button:hover {
@@ -69,8 +63,7 @@ button:hover {
 }
 
 .btn:hover {
-  background-color: #335987;
-  color: white;
+  text-decoration: ;
 }
 
 .aktuellt-wrapper {
@@ -85,6 +78,10 @@ button:hover {
   width: 80%;
   margin: auto;
   padding-bottom: 10px;
+}
+
+.article-text {
+  padding-top: 0.7em;
 }
 
 .carousel-wrapper {
