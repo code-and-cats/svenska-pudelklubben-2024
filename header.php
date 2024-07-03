@@ -1,15 +1,3 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package SPK24
- */
-
-?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -29,7 +17,7 @@
 		<div class="site-logo">
 		<a href="<?php echo site_url(); ?>">
 		<img class="logo-top" src="<?php echo get_theme_file_uri('/img/poodl.png') ?>;" alt="logo" /></a>
-
+</div>
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'spk24' ); ?></button>
 			<?php

@@ -1,20 +1,14 @@
-.header-container {
+/* Main container 
+--------------------------------------------- */
+.site-header {
   background-color: #fefdf7;
-}
-
-.header-wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
 .logo-top {
   height: 50px;
-}
-
-.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1 {
-  justify-content: space-between;
 }
 
 .current-menu-item {
@@ -29,12 +23,79 @@
   display: block;
 }
 
-.wp-block-navigation-item__label:hover {
-  background-color: #b02b08;
+/* Navigation
+--------------------------------------------- */
+.main-navigation {
+  display: block;
+  width: 100%;
 }
 
-@media screen and (min-width: 570px) {
-  .header-wrapper {
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 100%;
+  left: -999em;
+  z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  display: block;
+  left: auto;
+  color: #b02b08;
+}
+
+.main-navigation ul ul a {
+  width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+  color: #b02b08;
+}
+
+.main-navigation li {
+  position: relative;
+}
+
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.main-navigation a:hover {
+  color: #b02b08;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-navigation ul {
+    display: flex;
     justify-content: space-evenly;
+    align-items: center;
   }
 }
