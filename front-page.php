@@ -23,8 +23,8 @@ get_header();
         ?>
         <section class="aktuellt-wrapper">
      <article class="article-card">
-       <h2><?php the_title();?></h2>
-       <p>
+       <h2 class="article-heading"><?php the_title();?></h2>
+       <p class="article-text">
 <?php echo wp_trim_words(get_the_content(), 18); ?>
        </p>
        <a href="<?php the_permalink();?>">
