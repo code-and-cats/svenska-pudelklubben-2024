@@ -28,7 +28,7 @@ get_header();
 <?php echo wp_trim_words(get_the_content(), 18); ?>
        </p>
        <a href="<?php the_permalink();?>">
-       <button class="btn">Läs mer</button></a>
+       <button>Läs mer</button></a>
      </article>
    </section>
 <?php }
