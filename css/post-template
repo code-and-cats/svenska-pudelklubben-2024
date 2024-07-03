@@ -1,0 +1,13 @@
+<!-- wp:post-template {"metadata":{"name":"front-page-main"},"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"className":"aktuellt-wrapper"} -->
+<div class="wp-block-group aktuellt-wrapper"><!-- wp:group {"className":"article-card"} -->
+  <div class="wp-block-group article-card"><!-- wp:post-title /-->
+  
+  <!-- wp:post-excerpt /-->
+  
+  <!-- wp:button {"className":"btn"} -->
+  <div class="wp-block-button btn"><a class="wp-block-button__link wp-element-button">Läs mer</a></div>
+  <!-- /wp:button --></div>
+  <!-- /wp:group --></div>
+  <!-- /wp:group -->
+  <!-- /wp:post-template -->

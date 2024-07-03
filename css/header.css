@@ -1,0 +1,40 @@
+.header-container {
+  background-color: #fefdf7;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.logo-top {
+  height: 50px;
+}
+
+.wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1 {
+  justify-content: space-between;
+}
+
+.current-menu-item {
+  font-weight: 600;
+}
+
+.header a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.wp-block-navigation-item__label:hover {
+  background-color: #b02b08;
+}
+
+@media screen and (min-width: 570px) {
+  .header-wrapper {
+    justify-content: space-evenly;
+  }
+}

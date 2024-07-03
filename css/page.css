@@ -1,0 +1,45 @@
+.page-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 30vh;
+}
+
+.page-h1 {
+  font-size: 32px;
+}
+
+.page-h2 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: unset;
+}
+
+.page-main {
+  margin: auto;
+  padding-bottom: 10px;
+  width: 80%;
+}
+
+.page-sidebar {
+  background-color: #dad8cc;
+}
+
+.page-ul > li {
+  font-size: 12px;
+}
+
+.sidebar-content {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 570px) {
+  .page-section {
+    display: flex;
+  }
+
+  .page-sidebar {
+    width: 40vw;
+  }
+}
