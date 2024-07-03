@@ -156,3 +156,31 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+//Post types
+add_action('init', 'spk_post_types');
+
+function spk_post_types() {
+
+  //Aktuellt post type
+  register_post_type('aktuellt', array(
+    'supports' => array('title', 'editor'),
+    'public' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'menu_icon' => 'dashicons-buddicons-tracking',
+    'labels' => array(
+      'name' => 'Aktuellt'
+    )
+  ));
+
+  //Valpar post type
+  register_post_type('valpar', array(
+    'public' => true,
+    'show_in_rest' => true,
+    'menu_icon' => 'dashicons-pets',
+    'labels' => array(
+      'name' => 'Valpar'
+    )
+  ));
+  
+}
