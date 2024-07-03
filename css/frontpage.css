@@ -41,13 +41,13 @@
 /* Frontpage links */
 
 button {
-  font-weight: 600;
+  font-weight: 400;
   background-color: transparent;
   border: none;
   color: black;
   border-radius: 6px;
   text-align: center;
-  padding-top: 1em;
+  padding: 1em 0;
   margin: 0;
   text-decoration: underline;
 }
