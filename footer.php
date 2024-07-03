@@ -1,34 +1,28 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package SPK24
- */
+<footer class="site-footer">
+<img
+  class="logo-footer"
+  src="<?php echo get_theme_file_uri('/img/Svenska Pudelklubben_Logo_RGB_Red_Horisontal.png') ?>"
+  alt="logo" />
+<div class="vertical"></div>
+<div>
+  <h3>En specialklubb</h3>
+  <h3>inom svenska </h3>
+    <h3>kennelklubben</h3>
+</div>
 
-?>
+<div class="vertical"></div>
+<div>
+  <h3>Webbredaktörer</h3>
+  <p class="footer-contact">mail till oss</p>
+</div>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'spk24' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'spk24' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'spk24' ), 'spk24', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<div class="vertical"></div>
+<div>
+  <img class="footer-img" src="<?php echo get_theme_file_uri('/img/fa-logo.png') ?>" />
+  <img class="footer-img"  src="<?php echo get_theme_file_uri('/img/yt-logo.png') ?>" />
+</div>
+</footer>
 
 <?php wp_footer(); ?>
-
 </body>
 </html>
