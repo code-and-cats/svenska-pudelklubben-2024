@@ -70,34 +70,9 @@ function spk24_setup() {
 		)
 	);
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support(
-		'custom-background',
-		apply_filters(
-			'spk24_custom_background_args',
-			array(
-				'default-color' => 'ffffff',
-				'default-image' => '',
-			)
-		)
-	);
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
-
-	/**
-	 * Add support for core custom logo.
-	 *
-	 * @link https://codex.wordpress.org/Theme_Logo
-	 */
-	add_theme_support(
-		'custom-logo',
-		array(
-			'height'      => 10,
-			'flex-width'  => true,
-			'flex-height' => true,
-		)
-	);
 }
 add_action( 'after_setup_theme', 'spk24_setup' );
 
@@ -137,11 +112,12 @@ add_action( 'widgets_init', 'spk24_widgets_init' );
  * Enqueue scripts and styles.
  */
 function spk24_scripts() {
+	wp_style_add_data( 'spk24-style', 'rtl', 'replace' );
 	wp_enqueue_style('twd-googlefonts', '//fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',  array(), null );
 	wp_enqueue_style( 'spk24-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'spk24-style', 'rtl', 'replace' );
+
 	wp_enqueue_style('spk_page_style', get_theme_file_uri('/css/page.css'));
-  wp_enqueue_style('spk_page_style', get_theme_file_uri('/css/header.css'));
+  wp_enqueue_style('spk_header_style', get_theme_file_uri('/css/header.css'));
   wp_enqueue_style('spk_main_styles', get_theme_file_uri('/css/styles.css'));
   wp_enqueue_style('spk_footer_styles', get_theme_file_uri('/css/footer.css'));
 
