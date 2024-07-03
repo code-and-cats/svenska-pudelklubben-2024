@@ -9,14 +9,11 @@ get_header();
         <button>Bli medlem</button>
       </div>
     </div>
-	<main id="primary" class="site-main">
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<p>Im here</p>
+	<main id="primary" class="front-page-main">
+				
 				<?php
 
-			/* Start the Loop */
+			/* Aktuellt post type Loop */
 			$homepageAktuellt = new WP_Query(array(
 				'posts_per_page' => 6,
 				'post_type' => 'aktuellt'
