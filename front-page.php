@@ -37,4 +37,5 @@ get_header();
 	</main>
 
 <?php
+echo do_shortcode('[sliderpro id="1"]');
 get_footer(); ?>
