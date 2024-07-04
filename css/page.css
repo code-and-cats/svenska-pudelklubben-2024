@@ -5,7 +5,10 @@
 }
 
 .page-h1 {
+  font-weight: 200;
   font-size: 32px;
+  text-transform: uppercase;
+  padding: 1rem 0;
 }
 
 .page-h2 {
