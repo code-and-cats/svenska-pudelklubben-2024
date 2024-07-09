@@ -1,0 +1,112 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#DAD8CC",
+          "name": "Beige"
+        },
+        {
+          "slug": "secondary",
+          "color": "#F5F5F5",
+          "name": "Grey"
+        },
+        {
+          "slug": "blue",
+          "color": "#99ACC3",
+          "name": "Blue"
+        },
+        {
+          "slug": "green",
+          "color": "#C9C6A5",
+          "name": "Green"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "840px",
+      "wideSize": "1100px"
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Barlow\", sans-serif",
+          "name": "Barlow",
+          "slug": "barlow",
+          "fontFace": [
+            {
+              "fontFamily": "Barlow",
+              "fontWeight": "100 200 300 400 500 600 700 800 900",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": [
+                "https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
+              ]
+            },
+            {
+              "fontFamily": "Barlow",
+              "fontWeight": "100 200 300 400 500 600 700 800 900",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": [
+                "https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "styles": {
+    "blocks": {
+      "core/button": {
+        "color": {
+          "text": "#000000"
+        }
+      }
+    },
+    "elements": {
+      "link": {
+        "typography": {
+          "textDecoration": "none"
+        },
+        "border": {
+          "bottom": {
+            "width": "2px",
+            "color": "currentColor",
+            "style": "solid"
+          }
+        },
+        ":hover": {
+          "typography": {
+            "textDecoration": "none",
+            "color": 
+          },
+          "border": {
+            "bottom": {
+              "width": "2px",
+              "color": "#111",
+              "style": "dotted"
+            }
+          }
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "area": "header",
+      "title": "Header"
+    },
+    {
+      "name": "footer",
+      "area": "footer",
+      "title": "Footer"
+    }
+  ]
+}
