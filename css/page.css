@@ -4,11 +4,15 @@
   max-height: 30vh;
 }
 
-.page-h1 {
+.entry-title {
   font-weight: 200;
   font-size: 32px;
   text-transform: uppercase;
   padding: 1rem 0;
+}
+
+.entry-content p {
+  padding-bottom: 1rem;
 }
 
 .page-h2 {
