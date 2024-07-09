@@ -185,3 +185,32 @@ function spk24_post_types() {
   ));
   
 }
+
+function add_custom_sidebar_meta_box() {
+	add_meta_box(
+			'custom_sidebar_content_box', // Unique ID
+			'Sidebar Content', // Box title
+			'custom_sidebar_content_box_html', // Content callback
+			'page' // Post type
+	);
+}
+add_action( 'add_meta_boxes', 'add_custom_sidebar_meta_box' );
+
+function custom_sidebar_content_box_html( $post ) {
+	$value = get_post_meta( $post->ID, 'custom_sidebar_content', true );
+	?>
+	<label for="custom_sidebar_content">Sidebar Content</label>
+	<textarea id="custom_sidebar_content" name="custom_sidebar_content" rows="5" style="width:100%;"><?php echo esc_textarea( $value ); ?></textarea>
+	<?php
+}
+
+function save_custom_sidebar_content( $post_id ) {
+	if ( array_key_exists( 'custom_sidebar_content', $_POST ) ) {
+			update_post_meta(
+					$post_id,
+					'custom_sidebar_content',
+					$_POST['custom_sidebar_content']
+			);
+	}
+}
+add_action( 'save_post', 'save_custom_sidebar_content' );
