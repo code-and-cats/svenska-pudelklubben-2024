@@ -191,17 +191,25 @@ function add_custom_sidebar_meta_box() {
 			'custom_sidebar_content_box', // Unique ID
 			'Sidebar Content', // Box title
 			'custom_sidebar_content_box_html', // Content callback
-			'page' // Post type
+			'page', // Post type
+			'normal', // Context
+			'high' // Priority
 	);
 }
 add_action( 'add_meta_boxes', 'add_custom_sidebar_meta_box' );
 
 function custom_sidebar_content_box_html( $post ) {
-	$value = get_post_meta( $post->ID, 'custom_sidebar_content', true );
-	?>
-	<label for="custom_sidebar_content">Sidebar Content</label>
-	<textarea id="custom_sidebar_content" name="custom_sidebar_content" rows="5" style="width:100%;"><?php echo esc_textarea( $value ); ?></textarea>
-	<?php
+	$content = get_post_meta( $post->ID, 'custom_sidebar_content', true );
+	wp_editor( $content, 'custom_sidebar_content', array(
+			'textarea_name' => 'custom_sidebar_content',
+			'media_buttons' => false,
+			'textarea_rows' => 10,
+			'teeny'         => false,
+			'tinymce'       => array(
+				'toolbar1' => 'formatselect bold italic bullist numlist link',
+				'toolbar2' => 'alignleft aligncenter alignright',
+		),
+	) );
 }
 
 function save_custom_sidebar_content( $post_id ) {
