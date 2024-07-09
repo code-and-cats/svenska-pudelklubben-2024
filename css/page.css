@@ -15,7 +15,7 @@
   padding-bottom: 1rem;
 }
 
-.page-h2 {
+.wp-block-heading {
   font-size: 16px;
   font-weight: 600;
   text-transform: unset;
@@ -39,6 +39,18 @@
   width: 80%;
   margin: auto;
   padding-bottom: 10px;
+}
+
+.sidebar-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any inline-block spacing */
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 @media screen and (min-width: 570px) {
