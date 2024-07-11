@@ -6,6 +6,7 @@ get_header();
 ?>
 
 <section class="page-section">
+<div class="page-img-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/Tina-fors-grå-dvärg.jpg') ?>);"></div>
     <main id="primary" class="site-main">
         <?php
             the_post();
