@@ -71,10 +71,15 @@ article {
 @media screen and (min-width: 570px) {
   .page-section {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .page-sidebar {
     width: 40vw;
+  }
+
+  .page-img-wrapper {
+    flex: 100%;
   }
 
   .h2 {
