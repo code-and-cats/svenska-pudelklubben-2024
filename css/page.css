@@ -4,7 +4,7 @@
   max-height: 30vh;
 }
 
-.article {
+article {
   width: 80%;
   margin: auto;
 }
@@ -26,7 +26,7 @@
   text-transform: unset;
 }
 
-.page-main {
+.site-main {
   margin: auto;
   padding-bottom: 10px;
   width: 80%;
@@ -50,6 +50,15 @@
 .sidebar-content a {
   text-decoration: none;
   color: black;
+}
+
+.sidebar-content h2 {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.sidebar-content p {
+  font-size: 0.9em;
 }
 
 .full-width-image {
