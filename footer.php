@@ -5,14 +5,14 @@
   alt="logo" />
 <div class="vertical"></div>
 <div>
-  <h3>En specialklubb</h3>
-  <h3>inom svenska </h3>
-    <h3>kennelklubben</h3>
+  <p class="footer-text">En specialklubb</p>
+  <p class="footer-text">inom svenska </p>
+    <p class="footer-text">kennelklubben</p>
 </div>
 
 <div class="vertical"></div>
 <div>
-  <h3>Webbredaktörer</h3>
+  <p class="footer-text">Webbredaktörer</p>
   <p class="footer-contact">mail till oss</p>
 </div>
 
