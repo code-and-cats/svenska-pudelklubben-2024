@@ -17,6 +17,14 @@
   text-decoration: underline;
 }
 
+.avdelning-background-mobile {
+  background-color: #c9c6a5;
+}
+
+.avdelning-highlight {
+  background-color: #c9c6a5;
+}
+
 .header a {
   color: black;
   padding: 14px 16px;
@@ -101,4 +109,8 @@
     justify-content: space-evenly;
     align-items: center;
   }
+}
+
+.avdelning-background-mobile {
+  background-color: #fefdf7;
 }
