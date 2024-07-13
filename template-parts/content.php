@@ -29,7 +29,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php spk24_post_thumbnail(); ?>
+	<?php the_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -57,7 +57,8 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php spk24_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->
+<?php
+get_footer();
+?>
