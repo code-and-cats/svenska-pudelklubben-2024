@@ -3,6 +3,7 @@
   "version": 2,
 
   "settings": {
+    "appearanceTools": true,
     "color": {
       "palette": [
         {
@@ -36,7 +37,7 @@
         {
           "fontFamily": "\"Barlow\", sans-serif",
           "name": "Barlow",
-          "slug": "barlow",
+          "slug": "body",
           "fontFace": [
             {
               "fontFamily": "Barlow",
@@ -44,7 +45,7 @@
               "fontStyle": "normal",
               "fontStretch": "normal",
               "src": [
-                "https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
+                "//fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
               ]
             }
           ]
@@ -67,26 +68,20 @@
         },
         "border": {
           "bottom": {
-            "width": "2px",
-            "color": "currentColor",
+            "width": "1px",
+            "color": "black",
             "style": "solid"
           }
         },
         ":hover": {
           "typography": {
             "textDecoration": "none"
-          },
-          "border": {
-            "bottom": {
-              "width": "2px",
-              "color": "#111",
-              "style": "dotted"
-            }
           }
         }
       },
       "h1": {
         "typography": {
+          "fontWeight": "200",
           "textTransform": "uppercase"
         }
       }
@@ -94,14 +89,24 @@
   },
   "templateParts": [
     {
-      "name": "header",
       "area": "header",
+      "name": "header",
       "title": "Header"
     },
     {
-      "name": "footer",
       "area": "footer",
+      "name": "footer",
       "title": "Footer"
+    },
+    {
+      "area": "uncategorized",
+      "name": "sidebar",
+      "title": "Sidebar"
+    },
+    {
+      "area": "uncategorized",
+      "name": "post-meta",
+      "title": "Post Meta"
     }
   ]
 }
