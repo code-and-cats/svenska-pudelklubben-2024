@@ -6,8 +6,8 @@ get_header();
 ?>
 
 <section class="page-section">
-<div class="page-img-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/Tina-fors-grå-dvärg.jpg') ?>);"></div>
-    <main id="primary" class="site-main">
+<img class="page-img" src="<?php echo get_theme_file_uri('/img/Denise-Lundholm-Storpudel-svart-13-1-2048x1362.jpg') ?>" alt="pudel" />
+    <main id="primary" class="page-main">
         <?php
             the_post();
             // Display the image
