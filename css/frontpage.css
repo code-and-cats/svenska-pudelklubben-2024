@@ -49,13 +49,7 @@ button {
   text-align: center;
   padding: 1em 0;
   margin: 0;
-  text-decoration: underline;
   font-size: 1em;
-}
-
-button:hover {
-  font-size: 1.1em;
-  text-decoration: underline black 3px;
 }
 
 /* Aktuellt loop area */
