@@ -44,7 +44,7 @@ article {
   width: 80%;
   margin: auto;
   padding-bottom: 10px;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .sidebar-content a {
@@ -57,8 +57,17 @@ article {
   padding-bottom: 10px;
 }
 
+.sidebar-content h3 {
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
 .sidebar-content p {
   font-size: 0.9em;
+  padding-bottom: 10px;
 }
 
 .full-width-image {
