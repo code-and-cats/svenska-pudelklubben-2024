@@ -66,13 +66,6 @@
         "typography": {
           "textDecoration": "none"
         },
-        "border": {
-          "bottom": {
-            "width": "1px",
-            "color": "black",
-            "style": "solid"
-          }
-        },
         ":hover": {
           "typography": {
             "textDecoration": "none"
