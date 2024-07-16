@@ -106,6 +106,18 @@
     {
       "name": "template-norra-frontpage",
       "title": "Norra Avdelning Frontpage"
+    },
+    {
+      "name": "template-vastra-frontpage",
+      "title": "Västra Avdelning Frontpage"
+    },
+    {
+      "name": "template-mellansvenska-frontpage",
+      "title": "Mellansvenska Avdelning Frontpage"
+    },
+    {
+      "name": "template-sodra-frontpage",
+      "title": "Södra Avdelning Frontpage"
     }
   ]
 }
