@@ -1,5 +1,5 @@
 <?php
-
+/*
 // Define custom color palettes for each avdelning
 $avdelning_color_palettes = array(
     'norra' => array(
