@@ -1,16 +1,21 @@
 <?php
 // Add custom meta boxes
 function add_custom_sidebar_meta_box() {
-    add_meta_box(
-        'custom_sidebar_content_box', // Unique ID
-        'Sidebar Content', // Box title
-        'custom_sidebar_content_box_html', // Content callback
-        'page', // Post type
-        'normal', // Context
-        'high' // Priority
-    );
+    $post_types = array('page', 'norra', 'vastra', 'mellansvenska', 'sodra');
+    
+    foreach ($post_types as $post_type) {
+        add_meta_box(
+            'custom_sidebar_content_box_' . $post_type, // Unique ID
+            'Sidebar Content', 
+            'custom_sidebar_content_box_html', // Content callback
+            $post_type, // Post type
+            'normal', // Context
+            'high' // Priority
+        );
+    }
 }
 add_action('add_meta_boxes', 'add_custom_sidebar_meta_box');
+
 
 function custom_sidebar_content_box_html($post) {
     $content = get_post_meta($post->ID, 'custom_sidebar_content', true);
