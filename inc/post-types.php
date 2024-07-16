@@ -2,8 +2,6 @@
 
 // Register custom post types
 function register_avdelning_post_types() {
-    global $avdelning_color_palettes; // Access global color palettes array
-
     $avdelningar = ['Norra', 'Västra', 'Mellansvenska', 'Södra'];
     foreach ($avdelningar as $avdelning) {
         $slug = strtolower($avdelning);
@@ -36,18 +34,13 @@ function register_avdelning_post_types() {
             'has_archive' => true,
             'hierarchical' => false,
             'menu_position' => null,
-            'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'),
+            'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'page-attributes'),
         );
-
-        // Add custom color palette selection to args
-        if (isset($avdelning_color_palettes[$slug])) {
-            $args['avdelning_color_palette'] = $avdelning_color_palettes[$slug];
-        }
-
         register_post_type($slug, $args);
     }
 }
 add_action('init', 'register_avdelning_post_types');
+
 
 
 
