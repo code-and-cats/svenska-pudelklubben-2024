@@ -22,6 +22,33 @@ button {
   background-color: #d6dee7;
 }
 
+.vastra-aktuellt-wrapper,
+.vastra-page-sidebar {
+  background-color: #a1b8c0;
+}
+
+.vastra-aktuellt-wrapper:nth-child(even) {
+  background-color: #d9e3e6;
+}
+
+.mellansvenska-aktuellt-wrapper,
+.mellansvenska-page-sidebar {
+  background-color: #c9c6a5;
+}
+
+.mellansvenska-aktuellt-wrapper:nth-child(even) {
+  background-color: #e9e8db;
+}
+
+.sodra-aktuellt-wrapper,
+.sodra-page-sidebar {
+  background-color: #dfc99f;
+}
+
+.sodra-aktuellt-wrapper:nth-child(even) {
+  background-color: #f2ead9;
+}
+
 .article-card {
   width: 80%;
   margin: auto;
