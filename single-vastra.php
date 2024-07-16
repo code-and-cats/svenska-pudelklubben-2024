@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Norra
+Template Name: Västra
 */
 get_header();
 ?>
@@ -17,7 +17,7 @@ get_header();
            
         ?>
     </main>
-    <aside class="norra-page-sidebar">
+    <aside class="vastra-page-sidebar">
         <div class="sidebar-content">
             <?php echo get_post_meta( get_the_ID(), 'custom_sidebar_content', true ); ?>
         </div>
