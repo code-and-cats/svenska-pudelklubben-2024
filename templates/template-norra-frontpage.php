@@ -5,11 +5,10 @@
  */
 get_header();
 ?>
-<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/Vit-Mellanpudel-Valp-Matilda-Einebrant-8.jpg') ?>);">
+<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/norra.jpeg') ?>);">
       <div class="hero-container">
-        <h1 class="main-heading">Pudeln</h1>
-          <h1 class="secondary-heading">variationernas ras</h1>
-        <h2 class="tagline">4 storlekar | 5 färger</h2>
+        <h1 class="avdelning-main-heading">Norra</h1>
+        <h1 class="avdelning-main-heading">avdelningen</h1>
         <button>Bli medlem</button>
       </div>
     </div>
@@ -25,7 +24,7 @@ get_header();
 			while($homepageAktuellt->have_posts()) {
 				$homepageAktuellt->the_post();
         ?>
-        <section class="aktuellt-wrapper">
+        <section class="norra-aktuellt-wrapper">
      <article class="article-card">
        <h2 class="article-heading"><?php the_title();?></h2>
        <p class="article-text">
