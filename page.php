@@ -9,12 +9,10 @@ get_header();
 <img class="page-img" src="<?php echo get_theme_file_uri('/img/Denise-Lundholm-Storpudel-svart-13-1-2048x1362.jpg') ?>" alt="pudel" />
     <main id="primary" class="page-main">
         <?php
-            the_post();
-            // Display the image
+           get_template_part( 'template-parts/content', 'page' );
             if ( has_post_thumbnail() ) {
                 the_post_thumbnail( 'full', array( 'class' => 'full-width-image' ) );
             }
-            get_template_part( 'template-parts/content', 'page' );
         ?>
     </main>
     <aside class="page-sidebar">
