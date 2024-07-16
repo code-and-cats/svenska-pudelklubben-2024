@@ -31,3 +31,20 @@ body {
   font-size: 14px;
   margin: 10px 0;
 }
+
+.valpar-h1 a {
+  color: black;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.ptb_text_before {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.ptb_module img {
+  max-height: 200px;
+  width: auto;
+  object-fit: cover;
+}
