@@ -42,8 +42,6 @@ function register_avdelning_post_types() {
 add_action('init', 'register_avdelning_post_types');
 
 
-
-
 function spk_post_types() {
 
     //Aktuellt post type
