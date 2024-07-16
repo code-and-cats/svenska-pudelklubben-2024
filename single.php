@@ -1,11 +1,8 @@
 <?php
 /*
-Template Name: Page with Sidebar
+Template Name: Page without sidebar
 */
 get_header();
-?>
+the_content();
 
-
-
-<?php
 get_footer();
