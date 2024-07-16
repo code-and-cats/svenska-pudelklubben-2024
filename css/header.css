@@ -14,7 +14,6 @@
 
 .current-menu-item {
   font-weight: 500;
-  text-decoration: underline;
 }
 
 .avdelning-background-mobile {
@@ -25,12 +24,13 @@
   background-color: #c9c6a5;
 }
 
-.header a {
+.main-navigation a {
   color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
   display: block;
+  text-decoration: underline;
 }
 
 /* Navigation
@@ -100,6 +100,11 @@
 }
 
 @media screen and (min-width: 37.5em) {
+  .site-header {
+    display: flex;
+  }
+}
+/*
   .menu-toggle {
     display: none;
   }
@@ -114,3 +119,4 @@
 .avdelning-background-mobile {
   background-color: #fefdf7;
 }
+  */
