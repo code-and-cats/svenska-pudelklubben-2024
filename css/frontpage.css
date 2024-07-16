@@ -23,6 +23,11 @@
   text-transform: uppercase;
 }
 
+.avdelning-main-heading {
+  font-size: 48px;
+  color: #ffffff;
+}
+
 .article-heading {
   padding-top: 1em;
 }
