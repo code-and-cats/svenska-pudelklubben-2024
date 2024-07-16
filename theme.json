@@ -101,5 +101,11 @@
       "name": "post-meta",
       "title": "Post Meta"
     }
+  ],
+  "customTemplates": [
+    {
+      "name": "template-norra-frontpage",
+      "title": "Norra Avdelning Frontpage"
+    }
   ]
 }
