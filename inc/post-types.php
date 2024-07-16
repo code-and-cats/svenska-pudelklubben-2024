@@ -1,6 +1,9 @@
 <?php
+
 // Register custom post types
 function register_avdelning_post_types() {
+    global $avdelning_color_palettes; // Access global color palettes array
+
     $avdelningar = ['Norra', 'Västra', 'Mellansvenska', 'Södra'];
     foreach ($avdelningar as $avdelning) {
         $slug = strtolower($avdelning);
@@ -23,6 +26,7 @@ function register_avdelning_post_types() {
         $args = array(
             'labels' => $labels,
             'public' => true,
+            'menu_icon' => 'dashicons-pets',
             'publicly_queryable' => true,
             'show_ui' => true,
             'show_in_menu' => true,
@@ -34,7 +38,41 @@ function register_avdelning_post_types() {
             'menu_position' => null,
             'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'),
         );
+
+        // Add custom color palette selection to args
+        if (isset($avdelning_color_palettes[$slug])) {
+            $args['avdelning_color_palette'] = $avdelning_color_palettes[$slug];
+        }
+
         register_post_type($slug, $args);
     }
 }
 add_action('init', 'register_avdelning_post_types');
+
+
+
+function spk_post_types() {
+
+    //Aktuellt post type
+    register_post_type('aktuellt', array(
+      'supports' => array('title', 'editor'),
+      'public' => true,
+      'show_in_rest' => true,
+      'has_archive' => true,
+      'menu_icon' => 'dashicons-buddicons-tracking',
+      'labels' => array(
+        'name' => 'Aktuellt'
+      )
+    ));
+  
+    //Valpar post type
+    register_post_type('valpar', array(
+      'public' => true,
+      'show_in_rest' => true,
+      'menu_icon' => 'dashicons-pets',
+      'labels' => array(
+        'name' => 'Valpar'
+      )
+    ));
+    
+  }
