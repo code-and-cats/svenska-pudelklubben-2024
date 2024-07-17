@@ -41,29 +41,31 @@ function register_avdelning_post_types() {
 }
 add_action('init', 'register_avdelning_post_types');
 
-
 function spk_post_types() {
-
-    //Aktuellt post type
+    // Aktuellt post type
     register_post_type('aktuellt', array(
-      'supports' => array('title', 'editor'),
-      'public' => true,
-      'show_in_rest' => true,
-      'has_archive' => true,
-      'menu_icon' => 'dashicons-buddicons-tracking',
-      'labels' => array(
-        'name' => 'Aktuellt'
-      )
+        'supports' => array('title', 'editor'),
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-buddicons-tracking',
+        'labels' => array(
+            'name' => 'Aktuellt',
+            'singular_name' => 'Aktuellt',
+            'menu_name' => 'Aktuellt',
+            'name_admin_bar' => 'Aktuellt',
+            'add_new' => 'Add New',
+            'add_new_item' => 'Add New Aktuellt',
+            'new_item' => 'New Aktuellt',
+            'edit_item' => 'Edit Aktuellt',
+            'view_item' => 'View Aktuellt',
+            'all_items' => 'All Aktuellt',
+            'search_items' => 'Search Aktuellt',
+            'parent_item_colon' => 'Parent Aktuellt:',
+            'not_found' => 'No Aktuellt found.',
+            'not_found_in_trash' => 'No Aktuellt found in Trash.'
+        ),
     ));
-  
-    //Valpar post type
-    register_post_type('valpar', array(
-      'public' => true,
-      'show_in_rest' => true,
-      'menu_icon' => 'dashicons-pets',
-      'labels' => array(
-        'name' => 'Valpar'
-      )
-    ));
-    
-  }
+}
+add_action('init', 'spk_post_types');
+?>
