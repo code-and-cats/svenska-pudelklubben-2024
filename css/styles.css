@@ -48,3 +48,7 @@ body {
   width: auto;
   object-fit: cover;
 }
+
+a {
+  text-decoration: underline;
+}
