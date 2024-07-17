@@ -97,7 +97,7 @@ Tablet
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    height: 50vh;
+    height: 40vh;
   }
 
   .hero-container {
