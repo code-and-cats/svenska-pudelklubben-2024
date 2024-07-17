@@ -5,7 +5,7 @@
  */
 get_header();
 ?>
-<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/norra.jpg') ?>);">
+<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/JessicaNilsson-SPvit-1.jpg') ?>);">
       <div class="hero-container">
         <h1 class="avdelning-main-heading">Södra</h1>
         <h1 class="avdelning-main-heading">avdelningen</h1>
@@ -19,7 +19,7 @@ get_header();
 			/* Aktuellt post type Loop */
 			$homepageAktuellt = new WP_Query(array(
 				'posts_per_page' => 6,
-				'post_type' => 'sodra'
+				'post_type' => 'södra'
 			));
 			while($homepageAktuellt->have_posts()) {
 				$homepageAktuellt->the_post();

@@ -5,7 +5,7 @@
  */
 get_header();
 ?>
-<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/norra.jpeg') ?>);">
+<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/M-scaled.jpg') ?>);">
       <div class="hero-container">
         <h1 class="avdelning-main-heading">Västra</h1>
         <h1 class="avdelning-main-heading">avdelningen</h1>
@@ -19,7 +19,7 @@ get_header();
 			/* Aktuellt post type Loop */
 			$homepageAktuellt = new WP_Query(array(
 				'posts_per_page' => 6,
-				'post_type' => 'vastra'
+				'post_type' => 'västra'
 			));
 			while($homepageAktuellt->have_posts()) {
 				$homepageAktuellt->the_post();

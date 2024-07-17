@@ -118,6 +118,10 @@
     {
       "name": "template-sodra-frontpage",
       "title": "Södra Avdelning Frontpage"
+    },
+    {
+      "name": "single-vastra",
+      "title": "Västra"
     }
   ]
 }

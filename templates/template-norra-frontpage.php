@@ -5,7 +5,7 @@
  */
 get_header();
 ?>
-<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/norra.jpg') ?>);">
+<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/norra.jpeg') ?>);">
       <div class="hero-container">
         <h1 class="avdelning-main-heading">Norra</h1>
         <h1 class="avdelning-main-heading">avdelningen</h1>
