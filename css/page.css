@@ -6,7 +6,7 @@
 }
 
 .page-img {
-  height: 30vh;
+  height: 50vh;
   width: auto;
 }
 
@@ -47,8 +47,9 @@ article {
   padding: 2rem 0;
 }
 
-.sidebar-content a {
-  text-decoration: none;
+.sidebar-content a,
+.entry-content a {
+  text-decoration: underline;
   color: black;
 }
 
@@ -88,6 +89,7 @@ article {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    height: 50vh;
   }
 
   .page-sidebar {
