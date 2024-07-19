@@ -5,9 +5,15 @@
   grid-template-columns: 1fr;
 }
 
+.full-page-section {
+  display: grid;
+}
+
 .page-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
   height: 50vh;
-  width: auto;
 }
 
 article {
@@ -66,7 +72,8 @@ article {
   padding-top: 10px;
 }
 
-.sidebar-content p {
+.sidebar-content p,
+.sidebar-content div {
   font-size: 0.9em;
   padding-bottom: 10px;
 }

@@ -4,7 +4,7 @@ Template Name: Page without sidebar
 */
 get_header();
 ?>
-<section class="page-section">
+<section class="full-page-section">
 <?php
     // Get the custom field value
     $toppbild = get_field('toppbild');
@@ -20,7 +20,7 @@ get_header();
  <?php if ($top_image_url) : ?>
         <img src="<?php echo esc_url($top_image_url); ?>" alt="Top Image" class="page-img" />
     <?php endif; ?>
-    <main id="primary" class="page-main">
+    <main id="primary" class="full-page-main">
         <?php
             the_post();
             get_template_part( 'template-parts/content', 'page' );
