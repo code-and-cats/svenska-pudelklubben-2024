@@ -60,15 +60,15 @@ button {
 }
 
 /* Aktuellt loop area */
-.aktuellt-wrapper {
+.article-card {
   background-color: #dad8cc;
 }
 
-.aktuellt-wrapper:nth-child(even) {
+.article-card:nth-child(even) {
   background-color: #f5f5f5;
 }
 
-.article-card {
+.article-content {
   width: 80%;
   margin: auto;
   padding-bottom: 10px;
@@ -106,9 +106,6 @@ Tablet
   }
 
   .front-page-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
     padding-top: 1em;
   }
 
@@ -116,7 +113,13 @@ Tablet
     grid-column: 1 / span 2;
   }
 
-  .article-card {
+  .aktuellt-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+
+  .article-content {
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
@@ -134,7 +137,7 @@ Tablet
     height: 50vh;
   }
 
-  .front-page-main {
+  .aktuellt-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
