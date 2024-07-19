@@ -12,7 +12,7 @@ get_header();
         <button>Bli medlem</button>
       </div>
     </div>
-	<main id="primary" class="front-page-main">
+	<main id="primary" class="avd-front-page-main">
 				
 				<?php
 
@@ -25,7 +25,7 @@ get_header();
 				$homepageAktuellt->the_post();
         ?>
         <section class="norra-aktuellt-wrapper">
-     <article class="article-card">
+     <article class="avd-article-card">
        <h2 class="article-heading"><?php the_title();?></h2>
        <p class="article-text">
 <?php echo wp_trim_words(get_the_content(), 18); ?>
