@@ -26,15 +26,15 @@ function register_avdelning_post_types() {
             'public' => true,
             'menu_icon' => 'dashicons-pets',
             'publicly_queryable' => true,
-            'show_ui' => true,
             'show_in_menu' => true,
+            'show_in_rest' => true,
             'query_var' => true,
             'rewrite' => array('slug' => $slug),
             'capability_type' => 'post',
             'has_archive' => true,
             'hierarchical' => false,
             'menu_position' => null,
-            'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'page-attributes'),
+            'supports' => array('title', 'editor', 'thumbnail'),
         );
         register_post_type($slug, $args);
     }
