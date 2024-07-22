@@ -48,3 +48,15 @@ body {
   width: auto;
   object-fit: cover;
 }
+
+.wp-block-heading {
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-top: 1em;
+}
+
+.entry-content,
+.entry-header {
+  width: 80%;
+  margin: auto;
+}
