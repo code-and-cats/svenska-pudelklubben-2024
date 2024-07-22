@@ -54,10 +54,12 @@ get_header();
      </article>
    </section>
    <section class="sponsor-wrapper">
+   
     <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/svedea-forsakring-logotyp.png') ?>;"></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/dr-clauders-sverige-960x480-560x280.jpg') ?>;"></div>
+    <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/4Dogs-logga-genomskinlig-med-svart-text-2048x485.jpg') ?>;"></div>
+    <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/alwaysyoufriend-2048x2048.png') ?>;"></div>
+    <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/Lyckliga-Faret-Logga-2048x1034.jpg') ?>;"></div>
 </section>
 
 	</main>

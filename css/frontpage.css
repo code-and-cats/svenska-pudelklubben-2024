@@ -5,7 +5,7 @@
   background-position: center;
   display: flex;
   align-items: center;
-  height: 50vh;
+  height: 55vh;
   padding-left: 10vw;
 }
 
@@ -74,6 +74,18 @@ button {
   padding-bottom: 10px;
 }
 
+/* Sponsor logos */
+
+.sponsor-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-wrapper img {
+  max-width: 15vw;
+}
+
 /* 
 Tablet 
 ------------------------------------
@@ -129,12 +141,22 @@ Tablet
   }
 }
 
+/* Sponsor logos */
+
+.sponsor-wrapper {
+  flex-direction: row;
+}
+
+.sponsor-wrapper img {
+  max-width: 15vw;
+}
+
 /* Desktop 
 -----------------------------------*/
 
 @media screen and (min-width: 900px) {
   .hero-wrapper {
-    height: 50vh;
+    height: 60vh;
   }
 
   .aktuellt-wrapper {
