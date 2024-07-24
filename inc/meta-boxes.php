@@ -1,7 +1,7 @@
 <?php
 // Add custom meta boxes
 function add_custom_sidebar_meta_box() {
-    $post_types = array('page', 'norra', 'västra', 'mellansvenska', 'sodra');
+    $post_types = array('page', 'norra', 'västra', 'mellansvenska', 'södra');
     
     foreach ($post_types as $post_type) {
         add_meta_box(
