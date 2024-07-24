@@ -18,13 +18,73 @@
         },
         {
           "slug": "blue",
-          "color": "#99ACC3",
+          "color": "#335987",
           "name": "Blue"
         },
         {
-          "slug": "green",
+          "slug": "teal",
+          "color": "#437181",
+          "name": "Teal"
+        },
+        {
+          "slug": "olive",
+          "color": "#938D4C",
+          "name": "Olive"
+        },
+        {
+          "slug": "Golden",
+          "color": "#C09440",
+          "name": "Golden"
+        },
+        {
+          "slug": "light-blue",
+          "color": "#99ACC3",
+          "name": "Norra light blue"
+        },
+        {
+          "slug": "light-blue-2",
+          "color": "#D6DEE7",
+          "name": "Norra light blue 2"
+        },
+        {
+          "slug": "light-teal-1",
+          "color": "#A1B8C0",
+          "name": "Västra light teal"
+        },
+        {
+          "slug": "light-teal-2",
+          "color": "#D9E3E6",
+          "name": "Västra light teal 2"
+        },
+        {
+          "slug": "light-teal-2",
+          "color": "#D9E3E6",
+          "name": "Västra light teal 2"
+        },
+        {
+          "slug": "light-teal-2",
+          "color": "#D9E3E6",
+          "name": "Västra light teal 2"
+        },
+        {
+          "slug": "light-olive",
           "color": "#C9C6A5",
-          "name": "Green"
+          "name": "Light olive"
+        },
+        {
+          "slug": "light-olive-2",
+          "color": "#E9E8DB",
+          "name": "Light olive 2"
+        },
+        {
+          "slug": "light-golden",
+          "color": "#DFC99F",
+          "name": "Light golden"
+        },
+        {
+          "slug": "light-golden 2",
+          "color": "#F2EAD9",
+          "name": "Light golden-2"
         }
       ]
     },
