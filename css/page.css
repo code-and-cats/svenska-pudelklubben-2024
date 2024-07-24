@@ -27,6 +27,14 @@
   padding-bottom: 1rem;
 }
 
+.is-layout-flow p {
+  margin-block-start: 0;
+}
+
+summary {
+  padding: 0.8em;
+}
+
 .wp-block-heading {
   font-size: 1.1em;
   font-weight: 600;
