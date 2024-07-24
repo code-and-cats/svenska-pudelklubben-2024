@@ -18,8 +18,9 @@
 
 <div class="vertical"></div>
 <div>
-  <img class="footer-img" src="<?php echo get_theme_file_uri('/img/fa-logo.png') ?>" />
-  <img class="footer-img"  src="<?php echo get_theme_file_uri('/img/yt-logo.png') ?>" />
+  <a href="https://www.facebook.com/spksvenskapudelklubben"><img class="footer-img" src="<?php echo get_theme_file_uri('/img/fa-logo.png') ?>" /></a>
+  <a href="https://www.youtube.com/c/SvenskaPudelklubben"><img class="footer-img"  src="<?php echo get_theme_file_uri('/img/yt-logo.png') ?>" /></a>
+  <a href="https://www.instagram.com/svenskapudelklubben/"><img class="footer-img"  src="<?php echo get_theme_file_uri('/img/instagram.png') ?>" /></a>
 </div>
 </footer>
 
