@@ -32,7 +32,11 @@
 }
 
 summary {
-  padding: 0.8em;
+  padding: 0.2em;
+}
+
+.wp-block-details {
+  padding: 0.3em;
 }
 
 .wp-block-heading {
