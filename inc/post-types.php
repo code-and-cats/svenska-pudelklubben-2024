@@ -10,16 +10,16 @@ function register_avdelning_post_types() {
             'singular_name' => $avdelning,
             'menu_name' => $avdelning,
             'name_admin_bar' => $avdelning,
-            'add_new' => 'Add New',
-            'add_new_item' => "Add New $avdelning",
-            'new_item' => "New $avdelning",
-            'edit_item' => "Edit $avdelning",
-            'view_item' => "View $avdelning",
-            'all_items' => "All $avdelning",
-            'search_items' => "Search $avdelning",
+            'add_new' => 'Lägg till',
+            'add_new_item' => "Lägg till $avdelning",
+            'new_item' => "Ny $avdelning",
+            'edit_item' => "Redigera $avdelning",
+            'view_item' => "Visa $avdelning",
+            'all_items' => "Alla $avdelning",
+            'search_items' => "Sök $avdelning",
             'parent_item_colon' => "Parent $avdelning:",
-            'not_found' => "No $avdelning found.",
-            'not_found_in_trash' => "No $avdelning found in Trash."
+            'not_found' => "Ingen $avdelning hittad.",
+            'not_found_in_trash' => "Ingen $avdelning hittad i papperskorgen."
         );
         $args = array(
             'labels' => $labels,
@@ -54,16 +54,16 @@ function spk_post_types() {
             'singular_name' => 'Aktuellt',
             'menu_name' => 'Aktuellt',
             'name_admin_bar' => 'Aktuellt',
-            'add_new' => 'Add New',
-            'add_new_item' => 'Add New Aktuellt',
-            'new_item' => 'New Aktuellt',
-            'edit_item' => 'Edit Aktuellt',
-            'view_item' => 'View Aktuellt',
-            'all_items' => 'All Aktuellt',
-            'search_items' => 'Search Aktuellt',
+            'add_new' => 'Lägg till',
+            'add_new_item' => 'Lägg till ny Aktuellt',
+            'new_item' => 'Ny Aktuellt',
+            'edit_item' => 'Redigera Aktuellt',
+            'view_item' => 'Visa Aktuellt',
+            'all_items' => 'Alla Aktuellt',
+            'search_items' => 'Sök Aktuellt',
             'parent_item_colon' => 'Parent Aktuellt:',
-            'not_found' => 'No Aktuellt found.',
-            'not_found_in_trash' => 'No Aktuellt found in Trash.'
+            'not_found' => 'Hittar inga aktuelltsidor!',
+            'not_found_in_trash' => 'Hittar inga aktuelltsidor i papperskorgen!'
         ),
     ));
 }
