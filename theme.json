@@ -14,12 +14,12 @@
         {
           "slug": "secondary",
           "color": "#F5F5F5",
-          "name": "Grey"
+          "name": "Grå"
         },
         {
           "slug": "blue",
           "color": "#335987",
-          "name": "Blue"
+          "name": "Royal blue"
         },
         {
           "slug": "teal",
@@ -37,14 +37,19 @@
           "name": "Golden"
         },
         {
+          "slug": "red",
+          "color": "#B02B08",
+          "name": "Red"
+        },
+        {
           "slug": "light-blue",
           "color": "#99ACC3",
-          "name": "Norra light blue"
+          "name": "Norra ljusblå"
         },
         {
           "slug": "light-blue-2",
           "color": "#D6DEE7",
-          "name": "Norra light blue 2"
+          "name": "Norra ljusblå 2"
         },
         {
           "slug": "light-teal-1",
@@ -57,34 +62,24 @@
           "name": "Västra light teal 2"
         },
         {
-          "slug": "light-teal-2",
-          "color": "#D9E3E6",
-          "name": "Västra light teal 2"
-        },
-        {
-          "slug": "light-teal-2",
-          "color": "#D9E3E6",
-          "name": "Västra light teal 2"
-        },
-        {
           "slug": "light-olive",
           "color": "#C9C6A5",
-          "name": "Light olive"
+          "name": "Mellansvenska Light olive"
         },
         {
           "slug": "light-olive-2",
           "color": "#E9E8DB",
-          "name": "Light olive 2"
+          "name": "Mellansvenska Light olive 2"
         },
         {
           "slug": "light-golden",
           "color": "#DFC99F",
-          "name": "Light golden"
+          "name": "Södra Light golden"
         },
         {
           "slug": "light-golden 2",
           "color": "#F2EAD9",
-          "name": "Light golden-2"
+          "name": "Södra Light golden-2"
         }
       ]
     },
