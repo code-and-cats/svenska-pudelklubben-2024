@@ -62,5 +62,12 @@ body {
 }
 
 .arets-pudel-heading {
-  padding-bottom: 1em;
+  padding-bottom: 8px;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 900px) {
+  .arets-pudel-heading {
+    padding-bottom: 1em;
+  }
 }
