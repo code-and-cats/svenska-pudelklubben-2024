@@ -5,21 +5,11 @@ get_header();
       <div class="hero-container">
         <h1 class="main-heading">Pudeln</h1>
           <h1 class="secondary-heading">variationernas ras</h1>
-        <button>Bli medlem!!</button>
+        <button>Bli medlem</button>
       </div>
     </div>
 	<main id="primary" class="front-page-main">
 				
-				<?php
-
-			/* Aktuellt post type Loop 
-			$homepageAktuellt = new WP_Query(array(
-				'posts_per_page' => 6,
-				'post_type' => 'aktuellt'
-			));
-			while($homepageAktuellt->have_posts()) {
-				$homepageAktuellt->the_post(); */
-        ?>
         <section class="aktuellt-wrapper">
      <article class="article-card">
      <div class="article-content">
@@ -51,15 +41,40 @@ get_header();
        <button>Bli medlem</button></a>
        </div>
      </article>
+     <?php
+
+/* Aktuellt loop for tablet only */
+$homepageAktuellt = new WP_Query(array(
+  'posts_per_page' => 1,
+  'post_type' => 'aktuellt'
+));
+while($homepageAktuellt->have_posts()) {
+  $homepageAktuellt->the_post(); 
+  ?>
+ <article class="article-card tablet-only">
+                <div class="article-content">
+                <h2 class="article-heading"><?php the_title();?></h2>
+       <p class="article-text">
+<?php echo wp_trim_words(get_the_content(), 18); ?>
+       </p>
+       <a href="<?php the_permalink();?>">
+       <button>Läs mer</button></a>
+                </div>
+            </article>
+        <?php
+        }
+        wp_reset_postdata();
+        ?>
    </section>
    <section class="sponsor-wrapper">
-   
+    <h3 class="sponsor-heading">Våra sponsorer</h3>
     <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/svedea-forsakring-logotyp.png') ?>;"></div>
     <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/dr-clauders-sverige-960x480-560x280.jpg') ?>;"></div>
     <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/4Dogs-logga-genomskinlig-med-svart-text-2048x485.jpg') ?>;"></div>
     <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/alwaysyoufriend-2048x2048.png') ?>;"></div>
     <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/Lyckliga-Faret-Logga-2048x1034.jpg') ?>;"></div>
 </section>
+
 
 	</main>
 

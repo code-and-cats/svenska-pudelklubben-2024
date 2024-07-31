@@ -76,14 +76,26 @@ button {
 
 /* Sponsor logos */
 
+.sponsor-heading {
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-top: 1em;
+  grid-column: 1 / -1;
+}
+
 .sponsor-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 .sponsor-wrapper img {
-  max-width: 15vw;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* 
@@ -100,9 +112,17 @@ Tablet
     font-size: 32px;
   }
 
+  @media (max-width: 569px), (min-width: 901px) {
+    .tablet-only {
+      display: none;
+    }
+  }
+
   /*  h2 {
     font-size: 24px;
   }
+
+  
 
   /* Hero */
   .hero-wrapper {
