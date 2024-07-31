@@ -5,7 +5,7 @@ get_header();
       <div class="hero-container">
         <h1 class="main-heading">Pudeln</h1>
           <h1 class="secondary-heading">variationernas ras</h1>
-        <button>Bli medlem</button>
+        <button>Bli medlem!!</button>
       </div>
     </div>
 	<main id="primary" class="front-page-main">
