@@ -5,7 +5,6 @@ get_header();
       <div class="hero-container">
         <h1 class="main-heading">Pudeln</h1>
           <h1 class="secondary-heading">variationernas ras</h1>
-        <h2 class="tagline">4 storlekar | 5 färger</h2>
         <button>Bli medlem</button>
       </div>
     </div>
