@@ -98,6 +98,10 @@ button {
   margin: 0 auto;
 }
 
+.tablet-only {
+  display: none;
+}
+
 /* 
 Tablet 
 ------------------------------------
@@ -112,10 +116,8 @@ Tablet
     font-size: 32px;
   }
 
-  @media (max-width: 569px), (min-width: 901px) {
-    .tablet-only {
-      display: none;
-    }
+  .tablet-only {
+    display: block;
   }
 
   /* Hero */
@@ -178,6 +180,10 @@ Tablet
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
     padding-top: 1em;
+  }
+
+  .tablet-only {
+    display: none;
   }
 }
 
