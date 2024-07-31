@@ -26,10 +26,10 @@ get_header();
      <div class="article-content">
        <h2 class="article-heading">Aktiviteter</h2>
        <p class="article-text">
-        Utställning, kurs, eller pudelpromenad? Alla våra aktiviteter hittar du i vår kalender.
+        Utställning, kurs eller pudelpromenad? Alla våra aktiviteter hittar du i vår kalender.
        </p>
        <a href="#">
-       <button>Läs mer</button></a>
+       <button>Aktiviteter</button></a>
        </div>
      </article>
      <article class="article-card">
@@ -39,7 +39,7 @@ get_header();
         Vi har både valphänvisning och omplaceringar inom klubbens regi.
        </p>
        <a href="#">
-       <button>Läs mer</button></a>
+       <button>Hitta pudel</button></a>
 </div>
      </article>
      <article class="article-card">
@@ -49,7 +49,7 @@ get_header();
         Som medlem får du tillgång till alla våra aktiviteter och många bra medlemsförmåner hos våra sponsorer.
        </p>
        <a href="#">
-       <button>Läs mer</button></a>
+       <button>Bli medlem</button></a>
        </div>
      </article>
    </section>
