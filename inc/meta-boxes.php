@@ -19,17 +19,12 @@ add_action('add_meta_boxes', 'add_custom_sidebar_meta_box');
 
 function custom_sidebar_content_box_html($post) {
     $content = get_post_meta($post->ID, 'custom_sidebar_content', true);
-    wp_editor($content, 'custom_sidebar_content', array(
-        'textarea_name' => 'custom_sidebar_content',
-        'media_buttons' => false,
-        'textarea_rows' => 10,
-        'teeny' => false,
-        'tinymce' => array(
-            'toolbar1' => 'formatselect bold italic bullist numlist link',
-            'toolbar2' => 'alignleft aligncenter alignright',
-        ),
-    ));
+    ?>
+    <div id="custom-sidebar-editor"></div>
+    <input type="hidden" id="custom_sidebar_content" name="custom_sidebar_content" value="<?php echo esc_attr($content); ?>">
+    <?php
 }
+
 
 function save_custom_sidebar_content($post_id) {
     if (array_key_exists('custom_sidebar_content', $_POST)) {
