@@ -50,6 +50,10 @@ body {
   font-size: 22px;
 }
 
+.puppies {
+  padding-top: 3em;
+}
+
 .ptb_wrap {
   position: relative;
   width: 80%;
@@ -92,5 +96,6 @@ body {
 
   .hanvisning-wrapper {
     height: 30vh;
+    flex-wrap: nowrap;
   }
 }

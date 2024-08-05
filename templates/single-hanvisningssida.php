@@ -14,6 +14,7 @@ get_header();
 <p>Svenska pudelklubbens valphänvisningsregler</p>
 <p>SKK avelsdata</p>
 <p>SKK hunddata</p>
+<p>För uppfödare - lägg in kull</p>
 </div>
 </div>
 <div class="puppies">
