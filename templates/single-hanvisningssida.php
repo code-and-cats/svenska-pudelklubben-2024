@@ -18,8 +18,7 @@ get_header();
 </div>
 <div class="puppies">
 <?php
-            the_post();
-            get_template_part( 'template-parts/content', 'page' );
+            the_content();
 ?>
 </div>
 <?php
