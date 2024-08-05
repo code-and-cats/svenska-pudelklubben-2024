@@ -30,6 +30,11 @@ body {
 .carousel-text {
   font-size: 14px;
   margin: 10px 0;
+  .ptb_module img {
+    max-height: 200px;
+    width: auto;
+    object-fit: cover;
+  }
 }
 
 .valpar-h1 a {
