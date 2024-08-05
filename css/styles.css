@@ -105,4 +105,9 @@ body {
     background-color: #a1b8c0;
     padding: 2em;
   }
+
+  .ptb-search-form {
+    width: 80%;
+    margin: auto;
+  }
 }
