@@ -20,7 +20,8 @@
   font-weight: 200;
   font-size: 32px;
   text-transform: uppercase;
-  padding: 1rem 0;
+  width: 80%;
+  margin: auto;
 }
 
 .entry-content p {
