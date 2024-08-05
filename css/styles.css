@@ -59,14 +59,13 @@ body {
 .hanvisning-right {
   background-color: #437181;
   color: white;
-  width: 80%;
+
   margin: auto;
 }
 
 .hanvisning-left {
   background-color: #a1b8c0;
   height: 30vh;
-  width: 80%;
   margin: auto;
 }
 
