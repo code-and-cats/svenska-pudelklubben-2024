@@ -41,13 +41,18 @@ body {
 
 .entry-content,
 .entry-header {
-  width: 80%;
   margin: auto;
 }
 
 .arets-pudel-heading {
   padding-bottom: 8px;
   font-size: 22px;
+}
+
+.ptb_wrap {
+  position: relative;
+  width: 80%;
+  margin: auto;
 }
 
 @media screen and (min-width: 900px) {
