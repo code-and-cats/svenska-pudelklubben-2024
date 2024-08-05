@@ -17,8 +17,9 @@ get_header();
 <p>SKK hunddata</p>
 </div>
 </div>
-
-<?php [ptb type="valp" orderby="valp_f_delsedatum" order="asc" masonry="0" offset="0" posts_per_page="50" style="grid2" logic="and"]
+<?php
+            the_post();
+            get_template_part( 'template-parts/content', 'page' );
 
 get_footer();
 ?>
