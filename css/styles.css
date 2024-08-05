@@ -80,6 +80,11 @@ body {
   font-size: 32px;
 }
 
+.hanvisningscontent {
+  width: 80%;
+  margin: auto;
+}
+
 @media screen and (min-width: 900px) {
   .arets-pudel-heading {
     padding-bottom: 1em;
