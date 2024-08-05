@@ -81,6 +81,7 @@ button {
   text-transform: uppercase;
   padding-top: 1em;
   grid-column: 1 / -1;
+  padding-left: 10%;
 }
 
 .sponsor-wrapper {
@@ -184,6 +185,10 @@ Tablet
 
   .tablet-only {
     display: none;
+  }
+
+  .sponsor-heading {
+    padding-left: 3%;
   }
 }
 
