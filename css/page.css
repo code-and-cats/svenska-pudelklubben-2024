@@ -25,6 +25,8 @@
 
 .entry-content p {
   padding-bottom: 1rem;
+  width: 80%;
+  margin: auto;
 }
 
 .is-layout-flow p {
