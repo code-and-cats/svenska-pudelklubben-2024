@@ -20,14 +20,10 @@
   font-weight: 200;
   font-size: 32px;
   text-transform: uppercase;
-  width: 80%;
-  margin: auto;
 }
 
 .entry-content p {
   padding-bottom: 1rem;
-  width: 80%;
-  margin: auto;
 }
 
 .is-layout-flow p {

@@ -43,6 +43,7 @@ body {
 
 .entry-content,
 .entry-header {
+  width: 80%;
   margin: auto;
 }
 
@@ -55,6 +56,19 @@ body {
   position: relative;
   width: 80%;
   margin: auto;
+}
+
+.hanvisning-right {
+  background-color: #437181;
+  color: white;
+}
+
+.hanvisning-left {
+  background-color: #a1b8c0;
+}
+
+.hanvisning-wrapper {
+  display: flex;
 }
 
 @media screen and (min-width: 900px) {
