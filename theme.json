@@ -177,6 +177,10 @@
     {
       "name": "single-vastra",
       "title": "Västra"
+    },
+    {
+      "name": "single-hanvisningssida",
+      "title": "Hänvisningssida"
     }
   ]
 }
