@@ -43,12 +43,6 @@ body {
   font-weight: 200;
 }
 
-.ptb_module img {
-  max-height: 200px;
-  width: auto;
-  object-fit: cover;
-}
-
 .wp-block-heading {
   font-weight: 200;
   text-transform: uppercase;
@@ -69,5 +63,11 @@ body {
 @media screen and (min-width: 900px) {
   .arets-pudel-heading {
     padding-bottom: 1em;
+  }
+
+  .ptb_module img {
+    max-height: 200px;
+    width: auto;
+    object-fit: cover;
   }
 }
