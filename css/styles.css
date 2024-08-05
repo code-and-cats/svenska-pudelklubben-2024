@@ -85,6 +85,11 @@ body {
   margin: auto;
 }
 
+.searchbtn {
+  width: 200px;
+  height: 1.5em;
+}
+
 @media screen and (min-width: 900px) {
   .arets-pudel-heading {
     padding-bottom: 1em;
