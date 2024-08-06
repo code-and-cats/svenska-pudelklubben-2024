@@ -8,7 +8,8 @@ get_header();
   <div class="hanvisning-wrapper">
 <div class="hanvisning-right">
   <div class="hanvisningscontent"><h1 class="hanvisning-h1"><?php the_title();?></h1>
-<p>Här hittar du aktuella valpkullar inom Svenska Pudelklubben.</p></div>
+<p>Här hittar du aktuella valpkullar inom Svenska Pudelklubben.</p>
+<p>Läs mer om att <a href="#">skaffa pudel på våra sidor!</a></p></div>
 </div>  
 <div class="hanvisning-left">
 <div class="hanvisningscontent">
