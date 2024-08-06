@@ -1,0 +1,35 @@
+.puppies {
+  padding-top: 3em;
+  width: 80%;
+  margin: auto;
+}
+
+.hanvisning-right {
+  background-color: #437181;
+  color: white;
+  padding: 2em;
+}
+
+.hanvisning-left {
+  background-color: #a1b8c0;
+  padding: 2em;
+}
+
+.hanvisning-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hanvisning-h1 {
+  font-size: 32px;
+}
+
+.hanvisningscontent {
+  width: 80%;
+  margin: auto;
+}
+
+.ptb_link_button {
+  width: 200px;
+  font-size: 14px;
+}
