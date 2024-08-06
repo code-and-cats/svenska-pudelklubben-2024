@@ -40,7 +40,7 @@ summary {
 }
 
 .wp-block-details[open] summary::marker {
-  content: 'v ';
+  content: '\00AB ';
 }
 
 .wp-block-details {
