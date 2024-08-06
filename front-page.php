@@ -68,7 +68,7 @@ while($homepageAktuellt->have_posts()) {
    </section>
    <section class="sponsor-wrapper">
     <h3 class="sponsor-heading">Våra sponsorer</h3>
-    <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/svedea-forsakring-logotyp.png') ?>;"></div>
+    <div><a href="https://www.svedea.se/hundforsakring/hundagare/hundklubbar/svenska-pudelklubben?fbclid=IwAR33GfXUp-3UuKC1_uRRGaUbv5tCE9VlYVxVPxMpkTQP1xw7aWwRZLNI4Ug"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/svedea-forsakring-logotyp.png') ?>;"></a></div>
     <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/dr-clauders-sverige-960x480-560x280.jpg') ?>;"></div>
     <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/4Dogs-logga-genomskinlig-med-svart-text-2048x485.jpg') ?>;"></div>
     <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/alwaysyoufriend-2048x2048.png') ?>;"></div>

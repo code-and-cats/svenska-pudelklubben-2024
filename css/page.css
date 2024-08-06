@@ -35,6 +35,14 @@ summary {
   padding: 0.2em;
 }
 
+.wp-block-details summary::marker {
+  content: '\00BB ';
+}
+
+.wp-block-details[open] summary::marker {
+  content: 'v ';
+}
+
 .wp-block-details {
   padding: 0.3em;
 }
