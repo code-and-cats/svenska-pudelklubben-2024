@@ -36,11 +36,11 @@ summary {
 }
 
 .wp-block-details summary::marker {
-  content: '\00BB ';
+  content: '\00BB  ';
 }
 
 .wp-block-details[open] summary::marker {
-  content: '\00AB ';
+  content: '\2228  ';
 }
 
 .wp-block-details {
