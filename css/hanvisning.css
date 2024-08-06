@@ -17,7 +17,7 @@
 
 .hanvisning-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .hanvisning-h1 {
@@ -36,7 +36,7 @@
 
 @media screen and (min-width: 900px) {
   .hanvisning-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .hanvisning-left {
