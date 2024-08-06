@@ -10,9 +10,19 @@
   padding: 2em;
 }
 
+.hanvisning-right a {
+  text-decoration: underline;
+  color: white;
+}
+
 .hanvisning-left {
   background-color: #a1b8c0;
   padding: 2em;
+}
+
+.hanvisning-left a {
+  text-decoration: underline;
+  color: black;
 }
 
 .hanvisning-wrapper {
