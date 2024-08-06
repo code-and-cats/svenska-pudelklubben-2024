@@ -16,8 +16,8 @@
 }
 
 .hanvisning-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .hanvisning-h1 {
@@ -32,4 +32,15 @@
 .ptb_link_button {
   width: 200px;
   font-size: 14px;
+}
+
+@media screen and (min-width: 900px) {
+  .hanvisning-wrapper {
+    height: 30vh;
+  }
+
+  .hanvisning-left {
+    background-color: #a1b8c0;
+    padding: 2em;
+  }
 }
