@@ -55,6 +55,7 @@ summary {
 
 .page-sidebar {
   background-color: #dad8cc;
+  margin-top: 1.5em;
 }
 
 .page-ul > li {
@@ -123,6 +124,7 @@ summary {
   .page-sidebar {
     grid-column: span 1;
     background-color: #dad8cc;
+    margin-top: unset;
   }
 
   .h2 {
