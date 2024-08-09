@@ -5,7 +5,7 @@ get_header();
       <div class="hero-container">
         <h1 class="main-heading">Pudeln</h1>
           <h1 class="secondary-heading">variationernas ras</h1>
-        <button>Bli medlem</button>
+        <a href="https://www.pudeltest.online/om-klubben/bli-medlem/"><button>Bli medlem</button></a>
       </div>
     </div>
 	<main id="primary" class="front-page-main">
@@ -17,7 +17,7 @@ get_header();
        <p class="article-text">
         Utställning, kurs eller pudelpromenad? Alla våra aktiviteter hittar du i vår kalender.
        </p>
-       <a href="#">
+       <a href="https://www.pudeltest.online/aktiviteter/">
        <button>Aktiviteter</button></a>
        </div>
      </article>
@@ -27,7 +27,7 @@ get_header();
        <p class="article-text">
         Vi har både valphänvisning och omplaceringar inom klubbens regi.
        </p>
-       <a href="#">
+       <a href="https://www.pudeltest.online/valpkullar/">
        <button>Hitta pudel</button></a>
 </div>
      </article>
@@ -37,7 +37,7 @@ get_header();
        <p class="article-text">
         Som medlem får du tillgång till alla våra aktiviteter och många bra medlemsförmåner hos våra sponsorer.
        </p>
-       <a href="#">
+       <a href="https://www.pudeltest.online/om-klubben/bli-medlem/">
        <button>Bli medlem</button></a>
        </div>
      </article>
