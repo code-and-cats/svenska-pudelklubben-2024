@@ -12,7 +12,7 @@
 
 <div class="vertical"></div>
 <div>
-  <p class="footer-text">Webbredaktörer</p>
+  <p class="footer-text">Kontakt</p>
   <p class="footer-contact">mail till oss</p>
 </div>
 
