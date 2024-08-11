@@ -5,18 +5,16 @@
 }
 
 .hanvisning-right {
-  background-color: #437181;
-  color: white;
+  background-color: #dad8cc;
   padding: 2em;
 }
 
 .hanvisning-right a {
   text-decoration: underline;
-  color: white;
 }
 
 .hanvisning-left {
-  background-color: #a1b8c0;
+  background-color: #fefdf7;
   padding: 2em;
 }
 
