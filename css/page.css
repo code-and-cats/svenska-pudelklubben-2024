@@ -42,7 +42,7 @@ summary {
 }
 
 .wp-block-details[open] summary::marker {
-  content: '\f347 ';
+  content: '\f347  ';
   font-family: 'Dashicons';
   font-size: 0.8em;
 }
