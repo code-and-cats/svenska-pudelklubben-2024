@@ -36,11 +36,15 @@ summary {
 }
 
 .wp-block-details summary::marker {
-  content: '\00BB  ';
+  content: '\f345 ';
+  font-family: dashicons;
+  font-size: 0.7em;
 }
 
 .wp-block-details[open] summary::marker {
-  content: '\2228  ';
+  content: '\f347 ';
+  font-family: 'Dashicons';
+  font-size: 0.8em;
 }
 
 .wp-block-details {
