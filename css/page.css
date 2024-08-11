@@ -137,26 +137,73 @@ summary {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .top-img {
-    grid-column: 1 / -1;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    height: 60vh;
-  }
-
   .page-sidebar {
-    grid-column: span 1;
     background-color: #dad8cc;
   }
 
-  .h2 {
-    font-size: 1.1em;
-    padding-bottom: 1rem;
-  }
+  @media screen and (max-width: 767px) {
+    .page-sidebar.has-featured-image {
+      margin-top: 1.5em;
+    }
 
-  .page-main {
-    grid-column: span 1;
-    width: 100%;
+    .sidebar-content {
+      width: 80%;
+      margin: auto;
+      padding-bottom: 10px;
+      padding: 1rem 0;
+    }
+
+    .sidebar-content a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .sidebar-content h2 {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+
+    .sidebar-content p {
+      font-size: 0.9em;
+    }
+
+    .full-width-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .top-image-wrapper {
+      width: 100%;
+      height: 30vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .top-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover; /* This will ensure the image covers the container, cropping as necessary */
+    }
+
+    .page-sidebar {
+      grid-column: span 1;
+      background-color: #dad8cc;
+    }
+
+    .h2 {
+      font-size: 1.1em;
+      padding-bottom: 1rem;
+    }
+
+    .page-main {
+      grid-column: span 1;
+      width: 100%;
+    }
   }
 }
