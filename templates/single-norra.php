@@ -14,8 +14,8 @@ get_header();
     if ($toppbild) {
         $top_image_url = $toppbild['url'];
     }
-endif;
- if ($top_image_url) : ?>
+    
+    if (!empty($top_image_url)) : ?>
         <img src="<?php echo esc_url($top_image_url); ?>" alt="Top Image" class="page-img" />
     <?php endif; ?>
     <main id="primary" class="page-main">

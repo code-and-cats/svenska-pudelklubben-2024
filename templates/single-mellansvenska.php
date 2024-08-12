@@ -8,15 +8,14 @@ get_header();
 
 <section class="page-section">
 <?php
-    // Get the custom field value
+
     $toppbild = get_field('toppbild');
     
-    // Determine the top image URL
     if ($toppbild) {
         $top_image_url = $toppbild['url'];
-    } endif;
-    ?>
- <?php if ($top_image_url) : ?>
+    }
+    
+    if (!empty($top_image_url)) : ?>
         <img src="<?php echo esc_url($top_image_url); ?>" alt="Top Image" class="page-img" />
     <?php endif; ?>
     <main id="primary" class="page-main">
