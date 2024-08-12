@@ -1,35 +1,37 @@
 <?php
 /*
-Template Name: Page without sidebar
+Template Name: Page with Sidebar
 */
 get_header();
 ?>
-<section class="full-page-section">
-<?php
-    // Get the custom field value
+
+<section class="page-section">
+    <?php
     $toppbild = get_field('toppbild');
-    
-    // Determine the top image URL
     if ($toppbild) {
         $top_image_url = $toppbild['url'];
-    } else {
-        // Fallback to featured image if ACF field is not set
-        $top_image_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
     }
-    ?>
- <?php if ($top_image_url) : ?>
+    
+    if (!empty($top_image_url)) : ?>
         <img src="<?php echo esc_url($top_image_url); ?>" alt="Top Image" class="page-img" />
     <?php endif; ?>
-    <main id="primary" class="full-page-main">
+    
+    <main id="primary" class="site-main">
         <?php
-            the_post();
-            get_template_part( 'template-parts/content', 'page' );
-            if ( has_post_thumbnail() ) {
-                the_post_thumbnail( 'full', array( 'class' => 'full-width-image' ) );
-            }
+        the_post();
+        get_template_part('template-parts/content', 'page');
+
+        if (has_post_thumbnail()) {
+            the_post_thumbnail('full', array('class' => 'full-width-image'));
+        }
         ?>
     </main>
-  
+    
+    <aside class="page-sidebar">
+        <div class="sidebar-content">
+            <?php echo get_post_meta(get_the_ID(), 'custom_sidebar_content', true); ?>
+        </div>
+    </aside>
 </section>
 
 <?php
