@@ -14,12 +14,9 @@ get_header();
     // Determine the top image URL
     if ($toppbild) {
         $top_image_url = $toppbild['url'];
-    } else {
-        // Fallback to featured image if ACF field is not set
-        $top_image_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
     }
-    ?>
- <?php if ($top_image_url) : ?>
+endif;
+ if ($top_image_url) : ?>
         <img src="<?php echo esc_url($top_image_url); ?>" alt="Top Image" class="page-img" />
     <?php endif; ?>
     <main id="primary" class="page-main">
