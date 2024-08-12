@@ -11,27 +11,25 @@ get_header();
     if ($toppbild) {
         $top_image_url = $toppbild['url'];
     }
-endif;
-if ($top_image_url) : ?>
-    <img src="<?php echo esc_url($top_image_url); ?>" alt="Top Image" class="page-img" />
-<?php endif;
-?>
+    
+    if (!empty($top_image_url)) : ?>
+        <img src="<?php echo esc_url($top_image_url); ?>" alt="Top Image" class="page-img" />
+    <?php endif; ?>
     
     <main id="primary" class="site-main">
         <?php
-                the_post();
-                get_template_part( 'template-parts/content', 'page' );
+        the_post();
+        get_template_part('template-parts/content', 'page');
 
-                if ( has_post_thumbnail() ) {
-                    the_post_thumbnail( 'full', array( 'class' => 'full-width-image' ) );
-                }
-        endif;
+        if (has_post_thumbnail()) {
+            the_post_thumbnail('full', array('class' => 'full-width-image'));
+        }
         ?>
     </main>
     
     <aside class="page-sidebar">
         <div class="sidebar-content">
-            <?php echo get_post_meta( get_the_ID(), 'custom_sidebar_content', true ); ?>
+            <?php echo get_post_meta(get_the_ID(), 'custom_sidebar_content', true); ?>
         </div>
     </aside>
 </section>
