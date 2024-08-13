@@ -61,6 +61,10 @@ summary {
   background-color: #dad8cc;
 }
 
+.page-sidebar summary {
+  font-size: 14px;
+}
+
 .page-ul > li {
   font-size: 12px;
 }
