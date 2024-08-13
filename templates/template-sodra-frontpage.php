@@ -7,9 +7,9 @@ get_header();
 ?>
 <div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/JessicaNilsson-SPvit-1.jpg') ?>);">
       <div class="hero-container">
-        <h1 class="avdelning-main-heading">Södra</h1>
-        <h1 class="avdelning-main-heading">avdelningen</h1>
-        <button>Bli medlem</button>
+        <h1 class="vit-avd-main-heading">Södra</h1>
+        <h1 class="vit-avd-main-heading">avdelningen</h1>
+        <button class="whitebtn">Bli medlem</button>
       </div>
     </div>
 	<main id="primary" class="avd-front-page-main">
