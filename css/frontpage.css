@@ -91,6 +91,7 @@ button {
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding-bottom: 1em;
 }
 
 .sponsor-wrapper img {
