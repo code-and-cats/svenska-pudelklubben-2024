@@ -181,6 +181,10 @@
     {
       "name": "single-hanvisningssida",
       "title": "Hänvisningssida"
+    },
+    {
+      "name": "single-omplacering",
+      "title": "Omplaceringssida"
     }
   ]
 }
