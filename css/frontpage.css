@@ -79,7 +79,7 @@ button {
 .sponsor-heading {
   font-weight: 200;
   text-transform: uppercase;
-  padding-top: 1em;
+  padding-top: 2em;
   grid-column: 1 / -1;
   padding-left: 10%;
 }
