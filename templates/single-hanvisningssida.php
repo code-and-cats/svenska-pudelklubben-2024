@@ -13,6 +13,7 @@ get_header();
 </div>  
 <div class="hanvisning-left">
 <div class="hanvisningscontent">
+<h3>Regler för valphänvisning</h3>
   <p>Det är respektive uppfödares ansvar att inskickade uppgifter är korrekta och att kullen följer våra valphänvisningsregler. På SKKs avelsdata och hunddata kan du kontrollera individers hälsotester och tävlingsmeriter med mera. Sök med hjälp av hundens namn eller registreringsnummer.</p>
   <p>Vår valphänvisare når du på: valpformedling@pudelklubben.se</p>
 <a href="https://pudelklubben.se/wp-content/uploads/2024/01/SPK-Valphanvisningsregler-2024.pdf"><p>Svenska pudelklubbens valphänvisningsregler</p></a>
