@@ -3,7 +3,7 @@
 <img
   class="logo-footer"
   src="<?php echo get_theme_file_uri('/img/Svenska Pudelklubben_Logo_RGB_Red_Horisontal.png') ?>"
-  alt="logo" />
+  alt="Svenska pudelklubbens logo" />
 <div class="vertical"></div>
 <div>
   <p class="footer-text">En specialklubb</p>
@@ -19,9 +19,9 @@
 
 <div class="vertical"></div>
 <div>
-  <a href="https://www.facebook.com/spksvenskapudelklubben"><img class="footer-img" src="<?php echo get_theme_file_uri('/img/fa-logo.png') ?>" /></a>
-  <a href="https://www.youtube.com/c/SvenskaPudelklubben"><img class="footer-img"  src="<?php echo get_theme_file_uri('/img/yt-logo.png') ?>" /></a>
-  <a href="https://www.instagram.com/svenskapudelklubben/"><img class="footer-img"  src="<?php echo get_theme_file_uri('/img/instagram.png') ?>" /></a>
+  <a href="https://www.facebook.com/spksvenskapudelklubben"><img class="footer-img" src="<?php echo get_theme_file_uri('/img/fa-logo.png') ?>" alt="Facebook logo"/></a>
+  <a href="https://www.youtube.com/c/SvenskaPudelklubben"><img class="footer-img"  src="<?php echo get_theme_file_uri('/img/yt-logo.png') ?>" alt="Youtube logo" /></a>
+  <a href="https://www.instagram.com/svenskapudelklubben/"><img class="footer-img"  src="<?php echo get_theme_file_uri('/img/instagram.png') ?>" alt="Instagram logo" /></a>
 </div>
 </div>
 </footer>
