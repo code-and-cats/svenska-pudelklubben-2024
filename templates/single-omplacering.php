@@ -9,7 +9,7 @@ get_header();
 <div class="hanvisning-right">
   <div class="hanvisningscontent"><h1 class="hanvisning-h1"><?php the_title();?></h1>
 <p>Här hittar du aktuella omplaceringar inom Svenska Pudelklubben.</p>
-<p>De hundar som finns noterade på denna sida är över sex månader och är i alla storlekar. De har anmälts för hänvisning till klubbens vuxenhänvisare. Annonsen finns på sidan i en månad, förlängning med 14 dagar i taget.</p></div>
+<p>Hundarna är över sex månader och i alla storlekar. De har anmälts för hänvisning till klubbens vuxenhänvisare. Annonsen finns på sidan i en månad, förlängning med 14 dagar i taget.</p></div>
 </div>  
 <div class="hanvisning-left">
 <div class="hanvisningscontent">
@@ -17,7 +17,7 @@ get_header();
     <p>Fyll i <a href="#">formuläret för omplacering</a>. Hunden ska vara registrerad i SKK. </p>
 
 <p>För annonsering av omplacering kontakta: <a href="mailto:valpformedling@pudelklubben.se">valpformedling@pudelklubben.se</a></p>
-<p>Allt arbete inom Svenska Pudelklubben sker ideellt på fritiden vilket innebär att det kan ta någon vecka innan hänvisningen publiceras. Vår målsättning är att det ska uppdateras minst 2 gånger i veckan.</a></p>
+<p>Allt arbete inom Svenska Pudelklubben sker ideellt på fritiden, vilket innebär att det kan ta någon vecka innan hänvisningen publiceras. Vår målsättning är att uppdatera minst 2 gånger i veckan.</a></p>
 </div>
 </div>
 </div>
