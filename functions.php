@@ -29,4 +29,62 @@ require get_template_directory() . '/inc/utilities.php';
 // Load Jetpack compatibility file if Jetpack is installed
 if ( defined( 'JETPACK__VERSION' ) ) {
     require get_template_directory() . '/inc/jetpack.php';
+    
 }
+
+function fetch_facebook_events() {
+    $page_ids = [
+        '154281127963485'
+    ];
+
+    $access_token = 'EAAOiboBZCYEUBO2CVQFRKA7y0AFc5rZC3pz0EsV6P5trWdsEYjk2q8JxDq1iQqMyqWVQg3B2YZCcwiJzv234WAoJoOm4PO9v3JDJm7BRbrrrjwjmnNDzY2gu9LLOZAgNV6r8QpGhSnSJ3z4KejAyZAjHU31uqykMZAXMRHRZCvpjAuP8etCzCGjDoZBXk2yELo4EsZBSWaoyhO9UEAQ98UFZAOM5eCf88ZD';
+    $all_events = [];
+
+    foreach ($page_ids as $page_id) {
+        $url = "https://graph.facebook.com/v12.0/{$page_id}/events?access_token={$access_token}&fields=id,name,description,start_time,end_time,place";
+
+        $response = wp_remote_get($url);
+
+        if (!is_wp_error($response)) {
+            $body = wp_remote_retrieve_body($response);
+            $events = json_decode($body, true);
+
+            if (!empty($events['data'])) {
+                $all_events = array_merge($all_events, $events['data']);
+            }
+        }
+    }
+
+    return $all_events;
+}
+
+function display_facebook_events() {
+    $events = fetch_facebook();
+
+    if (empty($events)) {
+        return '<p>No upcoming events found.</p>';
+    }
+
+    $output = '<div class="facebook-events">';
+
+    foreach ($events as $event) {
+        $output .= '<div class="event">';
+        $output .= '<h3>' . esc_html($event['name']) . '</h3>';
+        $output .= '<p>' . esc_html($event['description']) . '</p>';
+        $output .= '<p><strong>Start Time:</strong> ' . date('F j, Y, g:i a', strtotime($event['start_time'])) . '</p>';
+        if (isset($event['end_time'])) {
+            $output .= '<p><strong>End Time:</strong> ' . date('F j, Y, g:i a', strtotime($event['end_time'])) . '</p>';
+        }
+        if (isset($event['place']['name'])) {
+            $output .= '<p><strong>Location:</strong> ' . esc_html($event['place']['name']) . '</p>';
+        }
+        $output .= '</div>';
+    }
+
+    $output .= '</div>';
+
+    return $output;
+}
+add_shortcode('facebook_events', 'display_facebook_events');
+
+
