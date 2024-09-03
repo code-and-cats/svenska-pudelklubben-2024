@@ -59,7 +59,7 @@ function fetch_facebook_events() {
 }
 
 function display_facebook_events() {
-    $events = fetch_facebook();
+    $events = fetch_facebook_events();
 
     if (empty($events)) {
         return '<p>No upcoming events found.</p>';
