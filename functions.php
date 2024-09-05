@@ -41,7 +41,7 @@ function fetch_facebook_events() {
     $all_events = [];
 
     foreach ($page_ids as $page_id) {
-        $url = "https://graph.facebook.com/v12.0/{$page_id}/events?access_token={$access_token}&fields=id,name,description,start_time,end_time,place";
+        $url = "https://graph.facebook.com/v12.0/{$page_id}/events?access_token={$access_token}&fields=id,name,description,start_time,end_time,place,cover";
 
         $response = wp_remote_get($url);
 
