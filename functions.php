@@ -91,13 +91,14 @@ function display_facebook_events() {
         // Header
         $output .= '<h2 class="event-header"><a href="' . esc_url($event_url) . '" target="_blank" rel="noopener noreferrer">' . esc_html($event['name']) . '</a></h2>';
         
-        //Start time
-        $output .= '<p>' . date('F j, Y, g:i a', strtotime($event['start_time'])) . '</p>';
-               
-        //End time
+        //Time
+        $output .= '<p>' . date('j M Y, G:i', strtotime($event['start_time']));
+
         if (isset($event['end_time'])) {
-         $output .= '<p>' . date('F j, Y, g:i a', strtotime($event['end_time'])) . '</p>';
+            $output .= ' - ' . date('j M Y, G:i', strtotime($event['end_time']));
         }
+        
+        $output .= '</p>';
 
         //Place
         if (isset($event['place']['name'])) {
