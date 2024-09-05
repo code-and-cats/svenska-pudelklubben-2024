@@ -23,8 +23,6 @@
   }
 
   .event-img {
-    width: 100%;
-    height: 163px;
     max-width: 450px;
     object-fit: cover;
   }
