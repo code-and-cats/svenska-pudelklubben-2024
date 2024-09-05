@@ -5,12 +5,24 @@
   grid-template-columns: 1fr;
 }
 
-.event {
+.event-description {
+  font-size: 15px;
+}
+
+.event-header {
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0.3em 0;
 }
 
 @media screen and (min-width: 570px) {
   .facebook-events {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+
+  .event-img {
+    max-height: 165px;
   }
 }
