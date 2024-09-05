@@ -40,6 +40,7 @@ function fetch_facebook_events() {
     $access_token = 'EAAOiboBZCYEUBOz9QYFiOlKeVWu5U4AJJDZChW3z4PPoPJHbb2Wx9I2cUeGM5I6rlNp8MZCufcl2fqm82DEvylEhw268eEvWyL7xto2Xa0H7JSwneBPCQJ3RkgtAbtrXL8fUfTDfmbVJuAVQhoo8smGNLSsOgZARZCXIdtBfmDzOgFxKZB5QNs7kK00BpebON43bPg3gZDZD';
     $all_events = [];
 
+    //Get current time
     $current_time = current_time('Y-m-d H:i:s'); 
 
     foreach ($page_ids as $page_id) {
@@ -64,7 +65,7 @@ function fetch_facebook_events() {
             }
         }
     }
-
+    //Sort events
     usort($all_events, function($a, $b) {
         return strtotime($b['start_time']) - strtotime($a['start_time']);
     });
