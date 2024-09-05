@@ -37,7 +37,7 @@ function fetch_facebook_events() {
         '154281127963485'
     ];
 
-    $access_token = 'EAAOiboBZCYEUBO2CVQFRKA7y0AFc5rZC3pz0EsV6P5trWdsEYjk2q8JxDq1iQqMyqWVQg3B2YZCcwiJzv234WAoJoOm4PO9v3JDJm7BRbrrrjwjmnNDzY2gu9LLOZAgNV6r8QpGhSnSJ3z4KejAyZAjHU31uqykMZAXMRHRZCvpjAuP8etCzCGjDoZBXk2yELo4EsZBSWaoyhO9UEAQ98UFZAOM5eCf88ZD';
+    $access_token = 'EAAOiboBZCYEUBOz9QYFiOlKeVWu5U4AJJDZChW3z4PPoPJHbb2Wx9I2cUeGM5I6rlNp8MZCufcl2fqm82DEvylEhw268eEvWyL7xto2Xa0H7JSwneBPCQJ3RkgtAbtrXL8fUfTDfmbVJuAVQhoo8smGNLSsOgZARZCXIdtBfmDzOgFxKZB5QNs7kK00BpebON43bPg3gZDZD';
     $all_events = [];
 
     foreach ($page_ids as $page_id) {
@@ -54,7 +54,7 @@ function fetch_facebook_events() {
             }
         }
     }
-    error_log( print_r( $response, true ) );
+
     return $all_events;
 }
 
