@@ -54,7 +54,7 @@ function fetch_facebook_events() {
             }
         }
     }
-
+    error_log( print_r( $response, true ) );
     return $all_events;
 }
 
