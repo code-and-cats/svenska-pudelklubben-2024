@@ -40,6 +40,8 @@ function fetch_facebook_events() {
     $access_token = 'EAAOiboBZCYEUBOz9QYFiOlKeVWu5U4AJJDZChW3z4PPoPJHbb2Wx9I2cUeGM5I6rlNp8MZCufcl2fqm82DEvylEhw268eEvWyL7xto2Xa0H7JSwneBPCQJ3RkgtAbtrXL8fUfTDfmbVJuAVQhoo8smGNLSsOgZARZCXIdtBfmDzOgFxKZB5QNs7kK00BpebON43bPg3gZDZD';
     $all_events = [];
 
+    $current_time = current_time('Y-m-d H:i:s'); 
+
     foreach ($page_ids as $page_id) {
         $url = "https://graph.facebook.com/v12.0/{$page_id}/events?access_token={$access_token}&fields=id,name,description,start_time,end_time,place,cover";
 
@@ -50,7 +52,15 @@ function fetch_facebook_events() {
             $events = json_decode($body, true);
 
             if (!empty($events['data'])) {
-                $all_events = array_merge($all_events, $events['data']);
+                foreach ($events['data'] as $event) {
+                    // Use end_time if available, otherwise use start_time
+                    $event_end_time = isset($event['end_time']) ? $event['end_time'] : $event['start_time'];
+                    
+                    // Only include events that are happening in the future
+                    if (strtotime($event_end_time) >= strtotime($current_time)) {
+                        $all_events[] = $event;
+                    }
+                }
             }
         }
     }
@@ -88,7 +98,7 @@ function display_facebook_events() {
         if (isset($event['end_time'])) {
          $output .= '<p>' . date('F j, Y, g:i a', strtotime($event['end_time'])) . '</p>';
         }
-        
+
         //Place
         if (isset($event['place']['name'])) {
         $output .= '<p>' . esc_html($event['place']['name']) . '</p>';
