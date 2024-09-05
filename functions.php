@@ -65,6 +65,11 @@ function fetch_facebook_events() {
         }
     }
 
+    usort($all_events, function($a, $b) {
+        return strtotime($b['start_time']) - strtotime($a['start_time']);
+    });
+
+
     return $all_events;
 }
 
