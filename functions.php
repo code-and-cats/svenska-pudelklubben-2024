@@ -72,18 +72,18 @@ function display_facebook_events() {
 
         // Display the event cover image if it exists
         if (isset($event['cover']['source'])) {
-            $output .= '<img src="' . esc_url($event['cover']['source']) . '" alt="' . esc_attr($event['name']) . '" style="max-width:100%; height:auto;" />';
+            $output .= '<img class="event-img" src="' . esc_url($event['cover']['source']) . '" alt="' . esc_attr($event['name']) . '" style="max-width:100%; height:auto;" />';
         }
 
         // Construct the event URL
         $event_url = 'https://www.facebook.com/events/' . esc_attr($event['id']);
 
-        // Make the event title a clickable link
-        $output .= '<h3><a href="' . esc_url($event_url) . '" target="_blank" rel="noopener noreferrer">' . esc_html($event['name']) . '</a></h3>';
+        // Header
+        $output .= '<h2 class="event-header"><a href="' . esc_url($event_url) . '" target="_blank" rel="noopener noreferrer">' . esc_html($event['name']) . '</a></h2>';
         
-        // Trim the description to 39 words
+        // Description
         $description = wp_trim_words( $event['description'], 39, '...' );
-        $output .= '<p>' . esc_html($description) . '</p>';
+        $output .= '<p class="event-description">' . esc_html($description) . '</p>';
 
         $output .= '<p><strong>Start Time:</strong> ' . date('F j, Y, g:i a', strtotime($event['start_time'])) . '</p>';
 
