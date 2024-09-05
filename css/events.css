@@ -1,0 +1,16 @@
+.facebook-events {
+  display: grid;
+  margin: auto;
+  padding-bottom: 10px;
+  grid-template-columns: 1fr;
+}
+
+.event {
+}
+
+@media screen and (min-width: 570px) {
+  .facebook-events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
