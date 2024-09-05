@@ -81,19 +81,26 @@ function display_facebook_events() {
         // Header
         $output .= '<h2 class="event-header"><a href="' . esc_url($event_url) . '" target="_blank" rel="noopener noreferrer">' . esc_html($event['name']) . '</a></h2>';
         
+        //Start time
+        $output .= '<p>' . date('F j, Y, g:i a', strtotime($event['start_time'])) . '</p>';
+               
+        //End time
+        if (isset($event['end_time'])) {
+         $output .= '<p>' . date('F j, Y, g:i a', strtotime($event['end_time'])) . '</p>';
+        }
+        
+        //Place
+        if (isset($event['place']['name'])) {
+        $output .= '<p>' . esc_html($event['place']['name']) . '</p>';
+        }
+
         // Description
         $description = wp_trim_words( $event['description'], 39, '...' );
         $output .= '<p class="event-description">' . esc_html($description) . '</p>';
 
-        $output .= '<p><strong>Start Time:</strong> ' . date('F j, Y, g:i a', strtotime($event['start_time'])) . '</p>';
 
-        if (isset($event['end_time'])) {
-            $output .= '<p><strong>End Time:</strong> ' . date('F j, Y, g:i a', strtotime($event['end_time'])) . '</p>';
-        }
 
-        if (isset($event['place']['name'])) {
-            $output .= '<p><strong>Location:</strong> ' . esc_html($event['place']['name']) . '</p>';
-        }
+
 
         $output .= '</div>';
     }
