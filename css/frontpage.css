@@ -73,7 +73,7 @@ button {
 /* Sponsor logos */
 
 .sponsor-heading {
-  font-weight: 200;
+  font-weight: 400;
   text-transform: uppercase;
   padding-top: 2em;
   grid-column: 1 / -1;
