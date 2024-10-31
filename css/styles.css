@@ -28,11 +28,6 @@ body {
   text-transform: uppercase;
 }
 
-.ptb_text_before {
-  text-transform: uppercase;
-  font-weight: 200;
-}
-
 .wp-block-heading {
   font-weight: 700;
   padding-top: 1em;
