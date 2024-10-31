@@ -63,7 +63,7 @@ ul {
   padding-top: 5%;
 }
 
-.ptb-search-form input {
+.ptb-search-form input[type='submit'] {
   padding: 1.3em 3em;
 }
 
