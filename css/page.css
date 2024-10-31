@@ -17,9 +17,8 @@
 }
 
 .entry-title {
-  font-weight: 200;
+  font-weight: 700;
   font-size: 32px;
-  text-transform: uppercase;
   padding: 1rem 0;
 }
 
@@ -74,13 +73,13 @@ summary {
 .entry-content a {
   text-decoration: underline;
   color: black;
+  text-underline-offset: 4px;
 }
 
 .sidebar-content h2 {
-  font-size: 16px;
+  font-size: 20px;
   padding: 1em 0;
   font-weight: 700;
-  text-transform: unset;
 }
 
 .sidebar-content h3 {
@@ -100,6 +99,7 @@ summary {
   font-size: 14px;
   padding-bottom: 10px;
   line-height: 1.5;
+  font-weight: 500;
 }
 
 .full-width-image {
