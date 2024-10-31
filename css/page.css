@@ -50,16 +50,14 @@ summary {
   padding: 0.3em;
 }
 
+/* Sidebar */
+
 .page-sidebar {
   background-color: #dad8cc;
 }
 
 .page-sidebar summary {
-  font-size: 14px;
-}
-
-.page-ul > li {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .sidebar-content {
@@ -96,11 +94,12 @@ summary {
 
 .sidebar-content p,
 .sidebar-content div {
-  font-size: 14px;
   padding-bottom: 10px;
   line-height: 1.5;
   font-weight: 500;
 }
+
+/* Page image */
 
 .full-width-image {
   width: 100%;
