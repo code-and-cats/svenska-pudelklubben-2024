@@ -63,6 +63,10 @@ ul {
   padding-top: 5%;
 }
 
+.ptb-search-form input {
+  padding: 1.3em 3em;
+}
+
 @media screen and (min-width: 900px) {
   .arets-pudel-heading {
     padding-bottom: 1em;
