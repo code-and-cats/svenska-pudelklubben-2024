@@ -51,6 +51,7 @@ button {
   margin: 0;
   font-size: 1em;
   text-decoration: underline;
+  text-underline-offset: 4px;
   cursor: pointer;
 }
 
