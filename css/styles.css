@@ -74,7 +74,8 @@ ul {
   text-transform: unset;
 }
 
-.aktivitet-bold {
+.aktivitet-bold,
+.ptb_text_before {
   font-weight: 700;
 }
 
