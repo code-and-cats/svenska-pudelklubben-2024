@@ -74,6 +74,10 @@ ul {
   text-transform: unset;
 }
 
+.aktivitet-bold {
+  font-weight: 700;
+}
+
 @media screen and (min-width: 900px) {
   .arets-pudel-heading {
     padding-bottom: 1em;
