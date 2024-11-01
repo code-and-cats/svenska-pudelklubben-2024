@@ -68,6 +68,12 @@ ul {
   padding: 1.3em 3em;
 }
 
+.aktivitet-header {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: unset;
+}
+
 @media screen and (min-width: 900px) {
   .arets-pudel-heading {
     padding-bottom: 1em;
