@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="site-footer">
   <div class="footer-wrapper">
 <img
   class="logo-footer"
