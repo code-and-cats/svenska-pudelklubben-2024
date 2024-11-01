@@ -31,7 +31,8 @@ body {
 .wp-block-heading {
   font-weight: 700;
   padding-top: 1em;
-  font-size: 1.4em;
+  font-size: 22px;
+  padding-bottom: 5px;
 }
 
 .entry-content,
