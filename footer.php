@@ -2,7 +2,7 @@
   <div class="footer-wrapper">
 <img
   class="logo-footer"
-  src="<?php echo get_theme_file_uri('/img/logo.png') ?>"
+  src="<?php echo get_theme_file_uri('/img/textlogo.png') ?>"
   alt="Svenska pudelklubbens logo" />
 <div class="vertical"></div>
 <div>

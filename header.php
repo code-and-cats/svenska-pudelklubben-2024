@@ -16,7 +16,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-logo">
 		<a href="<?php echo site_url(); ?>">
-		<img class="logo-top" src="<?php echo get_theme_file_uri('/img/logo.png') ?>;" alt="logo" /></a>
+		<img class="logo-top" src="<?php echo get_theme_file_uri('/img/textlogo.png') ?>;" alt="logo" /></a>
 </div>
 
 		<nav id="site-navigation" class="main-navigation">
