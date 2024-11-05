@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+<div class="main-content">
 <div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/Vit-Mellanpudel-Valp-Matilda-Einebrant-8.jpg') ?>);">
       <div class="hero-container">
         <h1 class="main-heading">Pudeln</h1>
@@ -77,6 +78,7 @@ while($homepageAktuellt->have_posts()) {
 
 
 	</main>
+      </div>
 
 <?php
 

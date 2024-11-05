@@ -32,99 +32,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
     
 }
 
-function fetch_facebook_events() {
-    $page_ids = [
-        '154281127963485'
-    ];
-
-    $access_token = 'EAAOiboBZCYEUBOz9QYFiOlKeVWu5U4AJJDZChW3z4PPoPJHbb2Wx9I2cUeGM5I6rlNp8MZCufcl2fqm82DEvylEhw268eEvWyL7xto2Xa0H7JSwneBPCQJ3RkgtAbtrXL8fUfTDfmbVJuAVQhoo8smGNLSsOgZARZCXIdtBfmDzOgFxKZB5QNs7kK00BpebON43bPg3gZDZD';
-    $all_events = [];
-
-    //Get current time
-    $current_time = current_time('Y-m-d H:i:s'); 
-
-    foreach ($page_ids as $page_id) {
-        $url = "https://graph.facebook.com/v12.0/{$page_id}/events?access_token={$access_token}&fields=id,name,description,start_time,end_time,place,cover";
-
-        $response = wp_remote_get($url);
-
-        if (!is_wp_error($response)) {
-            $body = wp_remote_retrieve_body($response);
-            $events = json_decode($body, true);
-
-            if (!empty($events['data'])) {
-                foreach ($events['data'] as $event) {
-                    // Use end_time if available, otherwise use start_time
-                    $event_end_time = isset($event['end_time']) ? $event['end_time'] : $event['start_time'];
-                    
-                    // Only include events that are happening in the future
-                    if (strtotime($event_end_time) >= strtotime($current_time)) {
-                        $all_events[] = $event;
-                    }
+// Add jQuery for mobile nav overlay
+function add_overlay_script() {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            // Remove overlay if user clicks outside the menu
+            $(document).on('click', function(event) {
+                if (!$(event.target).closest('.mega-menu, .mega-menu-toggle').length) {
+                    $('body').removeClass('mega-menu-menu-1-mobile-open');
                 }
-            }
-        }
-    }
-    //Sort events
-    usort($all_events, function($a, $b) {
-        return strtotime($b['start_time']) - strtotime($a['start_time']);
-    });
-
-
-    return $all_events;
+            });
+        });
+    </script>
+    <?php
 }
-
-function display_facebook_events() {
-    $events = fetch_facebook_events();
-
-    if (empty($events)) {
-        return '<p>No upcoming events found.</p>';
-    }
-
-    $output = '<div class="facebook-events">';
-
-    foreach ($events as $event) {
-        $output .= '<div class="event">';
-
-        // Display the event cover image if it exists
-        if (isset($event['cover']['source'])) {
-            $output .= '<img class="event-img" src="' . esc_url($event['cover']['source']) . '" alt="' . esc_attr($event['name']) . '" style="max-width:100%; height:auto;" />';
-        }
-
-        // Construct the event URL
-        $event_url = 'https://www.facebook.com/events/' . esc_attr($event['id']);
-
-        // Header
-        $output .= '<h2 class="event-header"><a href="' . esc_url($event_url) . '" target="_blank" rel="noopener noreferrer">' . esc_html($event['name']) . '</a></h2>';
-        
-        //Time
-        $output .= '<p>' . date('j M Y, G:i', strtotime($event['start_time']));
-
-        if (isset($event['end_time'])) {
-            $output .= ' - ' . date('j M Y, G:i', strtotime($event['end_time']));
-        }
-        
-        $output .= '</p>';
-
-        //Place
-        if (isset($event['place']['name'])) {
-        $output .= '<p>' . esc_html($event['place']['name']) . '</p>';
-        }
-
-        // Description
-        $description = wp_trim_words( $event['description'], 39, '...' );
-        $output .= '<p class="event-description">' . esc_html($description) . '</p>';
-
-
-
-
-
-        $output .= '</div>';
-    }
-
-    $output .= '</div>';
-
-    return $output;
-}
-add_shortcode('facebook_events', 'display_facebook_events');
-
+add_action('wp_footer', 'add_overlay_script');
