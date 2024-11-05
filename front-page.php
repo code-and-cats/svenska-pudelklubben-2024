@@ -78,8 +78,9 @@ while($homepageAktuellt->have_posts()) {
 
 
 	</main>
-      </div>
+      
 
 <?php
 
 get_footer(); ?>
+</div>
