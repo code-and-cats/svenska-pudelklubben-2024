@@ -5,7 +5,7 @@
 */
 get_header();
 ?>
-
+<div class="main-content">
 <section class="page-section">
 <?php
 
@@ -37,3 +37,4 @@ get_header();
 <?php
 get_footer();
 ?>
+</div>

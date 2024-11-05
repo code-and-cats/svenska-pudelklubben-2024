@@ -4,6 +4,7 @@ Template Name: Page without sidebar
 */
 get_header();
 ?>
+<div class="main-content">
 <section class="full-page-section">
 <?php
     $toppbild = get_field('toppbild');
@@ -30,3 +31,4 @@ get_header();
 <?php
 get_footer();
 ?>
+</div>

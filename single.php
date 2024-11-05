@@ -4,7 +4,7 @@ Template Name: Page with Sidebar
 */
 get_header();
 ?>
-
+<div class="main-content">
 <section class="page-section">
     <?php
     $toppbild = get_field('toppbild');
@@ -37,3 +37,4 @@ get_header();
 <?php
 get_footer();
 ?>
+</div>

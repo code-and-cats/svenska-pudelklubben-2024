@@ -4,6 +4,7 @@
 */
 get_header();
 ?>
+<div class="main-content">
 <section>
   <div class="hanvisning-wrapper">
 <div class="hanvisning-right">
@@ -29,3 +30,4 @@ get_header();
 <?php
 get_footer();
 ?>
+</div>

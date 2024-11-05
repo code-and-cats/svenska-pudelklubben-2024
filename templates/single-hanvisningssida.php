@@ -4,6 +4,7 @@
 */
 get_header();
 ?>
+<div class="main-content">
 <section>
   <div class="hanvisning-wrapper">
 <div class="hanvisning-right">
@@ -37,3 +38,4 @@ Tänk på att det för ögonlysning är en viss ålder (efter 18 mån och 5 år)
 <?php
 get_footer();
 ?>
+</div>

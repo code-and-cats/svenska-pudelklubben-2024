@@ -5,6 +5,7 @@
  */
 get_header();
 ?>
+<div class="main-content">
 <div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/JessicaNilsson-SPvit-1.jpg') ?>);">
       <div class="hero-container">
         <h1 class="white-avd-main-heading">Södra</h1>
@@ -42,3 +43,4 @@ get_header();
 <?php
 
 get_footer(); ?>
+</div>
