@@ -1,7 +1,6 @@
 .page-section {
   display: grid;
   margin: auto;
-  padding-bottom: 10px;
   grid-template-columns: 1fr;
 }
 
