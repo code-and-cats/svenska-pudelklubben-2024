@@ -1,6 +1,7 @@
 <?php
 /*
-Template Name: Page without sidebar
+* Template Name: Page without sidebar
+* Template Post Type: Västra, Norra, Mellansvenska, Södra
 */
 get_header();
 ?>
