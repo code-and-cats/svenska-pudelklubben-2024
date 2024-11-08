@@ -10,6 +10,7 @@ get_header();
 <div class="hanvisning-right">
   <div class="hanvisningscontent"><h1 class="hanvisning-h1"><?php the_title();?></h1>
 <p>Här hittar du aktuella valpkullar inom Svenska Pudelklubben.</p>
+<p>Är du särskilt intresserad av mentalitet? Vi har samlat alla <a href="https://www.pudeltest.online/uppfodare-med-bph-diplom/">uppfödare med BPH-diplom</a> på denna sida.</p>
 <p>Läs mer om att <a href="https://www.pudeltest.online/kopapudel/">skaffa pudel på våra sidor!</a></p></div>
 </div>  
 <div class="hanvisning-left">
