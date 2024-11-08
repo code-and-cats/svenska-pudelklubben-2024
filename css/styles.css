@@ -24,7 +24,7 @@ body {
 
 .valpar-h1 a {
   color: black;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -73,7 +73,10 @@ ul {
   text-transform: unset;
 }
 
-.aktivitet-bold,
+.aktivitet-date {
+  text-transform: uppercase;
+}
+
 .ptb_text_before {
   font-weight: 700;
 }
