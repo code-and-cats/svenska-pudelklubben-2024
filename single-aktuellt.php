@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Aktuellt with Sidebar
+* Template Name: Aktuellt med sidoinformation
 */
 get_header();
 ?>
