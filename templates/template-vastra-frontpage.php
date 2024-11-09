@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Västra Frontpage Template
+ * Template Name: Västra startsida
  * Template Post Type: Västra
  */
 get_header();
