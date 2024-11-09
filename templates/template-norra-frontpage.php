@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Norra Frontpage Template
+ * Template Name: Norra startsida
  * Template Post Type: norra
  */
 get_header();
