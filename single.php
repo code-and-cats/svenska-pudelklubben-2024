@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page with Sidebar
+* Template Name: Sida med sidoinformation
 */
 get_header();
 ?>
