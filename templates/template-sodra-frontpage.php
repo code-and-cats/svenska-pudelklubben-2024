@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Södra framsida
+ * Template Name: Södra startsida
  * Template Post Type: Södra
  */
 get_header();
