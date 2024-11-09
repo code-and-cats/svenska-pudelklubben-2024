@@ -6,7 +6,7 @@ function add_custom_sidebar_meta_box() {
     foreach ($post_types as $post_type) {
         add_meta_box(
             'custom_sidebar_content_box_' . $post_type, // Unique ID
-            'Sidebar Content', 
+            'Sidoinformation', 
             'custom_sidebar_content_box_html', // Content callback
             $post_type, // Post type
             'normal', // Context
