@@ -160,19 +160,19 @@
   "customTemplates": [
     {
       "name": "template-norra-frontpage",
-      "title": "Norra Avdelning Frontpage"
+      "title": "Norra Startsida"
     },
     {
       "name": "template-vastra-frontpage",
-      "title": "Västra Avdelning Frontpage"
+      "title": "Västra Startsida"
     },
     {
       "name": "template-mellansvenska-frontpage",
-      "title": "Mellansvenska Avdelning Frontpage"
+      "title": "Mellansvenska Startsida"
     },
     {
       "name": "template-sodra-frontpage",
-      "title": "Södra Avdelning Frontpage"
+      "title": "Södra Startsida"
     },
     {
       "name": "single-vastra",
