@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Mellansvenska Frontpage Template
+ * Template Name: Mellansvenska startsida
  * Template Post Type: mellansvenska
  */
 get_header();
