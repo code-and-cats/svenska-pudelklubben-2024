@@ -32,7 +32,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
     
 }
 
-// Add jQuery for mobile nav overlay
+// jQuery for mobile nav overlay
 function add_overlay_script() {
     ?>
     <script type="text/javascript">
