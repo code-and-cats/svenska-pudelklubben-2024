@@ -27,7 +27,7 @@ get_header();
 		<?php
 			/* Aktuellt post type Loop */
 			$homepageAktuellt = new WP_Query(array(
-				'posts_per_page' => 5,
+				'posts_per_page' => 6,
 				'post_type' => 'södra'
 			));
 
