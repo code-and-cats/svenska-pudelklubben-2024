@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 2,
+  "version": 3,
 
   "settings": {
     "appearanceTools": true,
@@ -155,36 +155,6 @@
       "area": "uncategorized",
       "name": "post-meta",
       "title": "Post Meta"
-    }
-  ],
-  "customTemplates": [
-    {
-      "name": "template-norra-frontpage",
-      "title": "Norra startsida"
-    },
-    {
-      "name": "template-vastra-frontpage",
-      "title": "Västra startsida"
-    },
-    {
-      "name": "template-mellansvenska-frontpage",
-      "title": "Mellansvenska startsida"
-    },
-    {
-      "name": "template-sodra-frontpage",
-      "title": "Södra startsida"
-    },
-    {
-      "name": "single-vastra",
-      "title": "Västra"
-    },
-    {
-      "name": "single-hanvisningssida",
-      "title": "Hänvisningssida"
-    },
-    {
-      "name": "single-omplacering",
-      "title": "Omplaceringssida"
     }
   ]
 }
