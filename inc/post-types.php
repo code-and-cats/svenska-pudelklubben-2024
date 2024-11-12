@@ -41,4 +41,33 @@ function register_avdelning_post_types() {
 }
 add_action('init', 'register_avdelning_post_types');
 
+function spk_post_types() {
+    // Aktuellt post type
+    register_post_type('aktuellt', array(
+        'supports' => array('title', 'editor'),
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-buddicons-tracking',
+        'labels' => array(
+            'name' => 'Aktuellt',
+            'singular_name' => 'Aktuellt',
+            'menu_name' => 'Aktuellt',
+            'name_admin_bar' => 'Aktuellt',
+            'add_new' => 'Lägg till',
+            'add_new_item' => 'Lägg till ny Aktuellt',
+            'new_item' => 'Ny Aktuellt',
+            'edit_item' => 'Redigera Aktuellt',
+            'view_item' => 'Visa Aktuellt',
+            'all_items' => 'Alla Aktuellt',
+            'search_items' => 'Sök Aktuellt',
+            'parent_item_colon' => 'Parent Aktuellt:',
+            'not_found' => 'Hittar inga aktuelltsidor!',
+            'not_found_in_trash' => 'Hittar inga aktuelltsidor i papperskorgen!'
+        ),
+    ));
+}
+add_action('init', 'spk_post_types');
+?>
+
 ?>
