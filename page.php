@@ -1,7 +1,6 @@
 <?php
 /*
 * Template Name: Sida utan sidoinformation
-* Template Post Type: Västra, Norra, Mellansvenska, Södra
 */
 get_header();
 ?>
