@@ -11,8 +11,8 @@
 }
 
 .logo-top {
-  height: 50px;
-  padding: 8px;
+  height: 50px !important;
+  padding: 8px !important;
 }
 
 .main-navigation a {
