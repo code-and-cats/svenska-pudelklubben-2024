@@ -36,14 +36,14 @@ a {
 }
 
 .logo-footer {
-  height: 5vh;
-  width: auto;
+  height: 5vh !important;
+  width: auto !important;
 }
 
 .footer-img {
-  height: 3vh;
-  width: auto;
-  padding: 1px;
+  height: 3vh !important;
+  width: auto !important;
+  padding: 1px !important;
 }
 
 @media screen and (min-width: 570px) {
