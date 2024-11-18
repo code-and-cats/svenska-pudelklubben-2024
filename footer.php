@@ -13,8 +13,8 @@
 
 <div class="vertical"></div>
 <div>
-  <p class="footer-text">Kontakt</p>
-  <p class="footer-contact">mail till oss</p>
+  <p class="footer-text">Vår</p>
+  <p class="footer-text"><a href="https://www.pudelklubben.se/var-integritetspolicy/">Integritetspolicy</a></p>
 </div>
 
 <div class="vertical"></div>

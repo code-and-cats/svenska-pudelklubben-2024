@@ -10,8 +10,8 @@ get_header();
 <div class="hanvisning-right">
   <div class="hanvisningscontent"><h1 class="hanvisning-h1"><?php the_title();?></h1>
 <p>Här hittar du aktuella valpkullar inom Svenska Pudelklubben.</p>
-<p>Är du särskilt intresserad av mentalitet? Vi har samlat alla <a href="https://www.pudeltest.online/uppfodare-med-bph-diplom/">uppfödare med BPH-diplom</a> på denna sida.</p>
-<p>Läs mer om att <a href="https://www.pudeltest.online/kopapudel/">skaffa pudel på våra sidor!</a></p></div>
+<p>Är du särskilt intresserad av mentalitet? Vi har samlat alla <a href="https://www.pudelklubben.se/uppfodare-med-bph-diplom/">uppfödare med BPH-diplom</a> på denna sida.</p>
+<p>Läs mer om att <a href="https://www.pudelklubben.se/kopapudel/">skaffa pudel på våra sidor!</a></p></div>
 </div>  
 <div class="hanvisning-left">
 <div class="hanvisningscontent">
@@ -24,10 +24,10 @@ get_header();
 Tänk på att det för ögonlysning är en viss ålder (efter 18 mån och 5 år). Blir din annons bortplockad kan det bero på att tiden för ögonlysningen inte är korrekt.</p>
     <p>På SKKs avelsdata och hunddata kan du kontrollera individers hälsotester och tävlingsmeriter med mera. Sök med hjälp av hundens namn eller registreringsnummer.</p>
   <p>Vår valphänvisare når du på: valpformedling@pudelklubben.se</p>
-<a href="https://pudelklubben.se/wp-content/uploads/2024/01/SPK-Valphanvisningsregler-2024.pdf"><p>Svenska pudelklubbens valphänvisningsregler</p></a>
+<a href="https://www.pudelklubben.se/wp-content/uploads/2024/11/SPK-Valphanvisningsregler-2024.pdf"><p>Svenska pudelklubbens valphänvisningsregler</p></a>
 <a href="https://hundar.skk.se/avelsdata/Initial.aspx"><p>SKK avelsdata</p></a>
 <a href="https://hundar.skk.se/hunddata/"><p>SKK hunddata</p></a>
-<a href="https://pudelklubben.se/kopa-pudel/uppfodarlogin/"><p>För uppfödare - lägg in kull</p></a>
+<a href="##"><p>För uppfödare - lägg in kull</a> - Tillfälligt nere, kommer snart tillbaka.</p>
 </div>
 </div>
 </div>

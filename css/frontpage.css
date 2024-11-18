@@ -9,10 +9,20 @@
   padding-left: 10vw;
 }
 
+.hero-text-wrapper {
+  padding-top: 1em;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.hero-text {
+  font-weight: 600;
+}
+
 /* Typography */
 .main-heading {
   font-size: 63px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -36,6 +46,12 @@
 
 .article-text {
   padding-top: 0.7em;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+  text-underline-offset: 4px;
 }
 
 /* Frontpage links */
@@ -129,6 +145,12 @@ Tablet
   .hero-container {
     width: 90vw;
     padding-top: 10%;
+  }
+
+  .hero-text-wrapper {
+    padding-top: 1em;
+    max-width: 400px;
+    margin: unset;
   }
 
   .carousel-wrapper {

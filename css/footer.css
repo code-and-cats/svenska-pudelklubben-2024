@@ -30,8 +30,9 @@
   margin: 0 2px;
 }
 
-.footer-contact {
-  font-size: 9px;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .logo-footer {

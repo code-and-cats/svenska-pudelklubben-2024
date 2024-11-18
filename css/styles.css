@@ -24,7 +24,7 @@ body {
 
 .valpar-h1 a {
   color: black;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -79,6 +79,15 @@ ul {
 
 .ptb_text_before {
   font-weight: 700;
+}
+
+.ptb-submission-submit-btn {
+  padding: 1.3em 3em;
+  color: white;
+  background-color: #437181;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 900px) {
