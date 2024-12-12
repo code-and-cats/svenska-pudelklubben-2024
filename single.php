@@ -26,12 +26,14 @@ get_header();
         }
         ?>
     </main>
-    
+
+    <?php if ( ! is_singular( 'product' ) ) : ?>
     <aside class="page-sidebar">
         <div class="sidebar-content">
             <?php echo get_post_meta(get_the_ID(), 'custom_sidebar_content', true); ?>
         </div>
     </aside>
+    <?php endif; ?>
 </section>
 
 <?php
