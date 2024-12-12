@@ -1,3 +1,8 @@
+.error-404 {
+  height: 100vh;
+  padding-top: 2em;
+}
+
 .main-content {
   position: relative;
   z-index: 1;
