@@ -28,9 +28,17 @@ require get_template_directory() . '/inc/utilities.php';
 
 // Load Jetpack compatibility file if Jetpack is installed
 if ( defined( 'JETPACK__VERSION' ) ) {
-    require get_template_directory() . '/inc/jetpack.php';
-    
+    require get_template_directory() . '/inc/jetpack.php';    
 }
+
+// Remove sidebar for woocommerce single product pages
+add_action( 'wp', function() {
+    if ( is_product() ) {
+        error_log( 'WooCommerce sidebar removed on product page.' );
+        remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+    }
+});
+
 
 // jQuery for mobile nav overlay
 function add_overlay_script() {
