@@ -2,12 +2,12 @@
 get_header();
 ?>
 <div class="main-content">
-<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/Vit-Mellanpudel-Valp-Matilda-Einebrant-8.jpg') ?>);">
+<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/20230222-Erika-Jansson-scaled.jpg') ?>);">
       <div class="hero-container">
         <h1 class="main-heading">Pudeln</h1>
           <h1 class="secondary-heading">variationernas ras</h1>
           <div class="hero-text-wrapper">
-        <p class="hero-text">Välkommen till vår nya sida! Vi jobbar fortfarande på att få allt på plats. <a href="mailto:vio.szabo@pudelklubben.se">Hör gärna av dig</a> om du hittar fel eller har frågor.</p>
+        <p class="hero-text"><a href="https://www.pudelklubben.se/om-klubben/bli-medlem/">Bli medlem</a></p>
 </div>
       </div>
     </div>
