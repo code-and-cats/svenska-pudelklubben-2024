@@ -26,15 +26,21 @@ get_header();
 		</section>
 
 		<?php
-
 			/* Aktuellt post type Loop */
 			$homepageAktuellt = new WP_Query(array(
-				'posts_per_page' => 6,
+				'posts_per_page' => 5,
 				'post_type' => 'norra'
 			));
+			$post_counter = 0;
 			while($homepageAktuellt->have_posts()) {
 				$homepageAktuellt->the_post();
-        ?>
+				$post_counter++;
+
+				// Skip displaying the first post in the loop
+				if ($post_counter == 1) {
+					continue;
+				}
+		?>
         <section class="norra-aktuellt-wrapper">
      <article class="avd-article-card">
        <h2 class="article-heading"><?php the_title();?></h2>
