@@ -15,7 +15,7 @@ get_header();
 <div class="hanvisning-left">
 <div class="hanvisningscontent">
   <h3>Anmäl hund för omplacering</h3>
-    <p>Fyll i <a href="#">formuläret för omplacering</a>. Hunden ska vara registrerad i SKK. </p>
+    <p>Fyll i <a href="https://www.pudelklubben.se/lagg-till-omplacering/">formuläret för omplacering</a>. Hunden ska vara registrerad i SKK. </p>
 
 <p>För annonsering av omplacering kontakta: <a href="mailto:valpformedling@pudelklubben.se">valpformedling@pudelklubben.se</a></p>
 <p>Allt arbete inom Svenska Pudelklubben sker ideellt på fritiden, vilket innebär att det kan ta någon vecka innan hänvisningen publiceras. Vår målsättning är att uppdatera minst 2 gånger i veckan.</a></p>

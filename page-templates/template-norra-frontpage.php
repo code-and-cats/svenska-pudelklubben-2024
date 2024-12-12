@@ -10,12 +10,22 @@ get_header();
       <div class="hero-container">
         <h1 class="white-avd-main-heading">Norra</h1>
         <h1 class="white-avd-main-heading">avdelningen</h1>
-        <button class="whitebtn">Bli medlem</button>
+        <a href="https://www.pudelklubben.se/om-klubben/bli-medlem/"><button>Bli medlem</button></a>
       </div>
     </div>
 	<main id="primary" class="avd-front-page-main">
 				
-				<?php
+
+		<!-- Static content  -->
+		<section class="norra-aktuellt-wrapper">
+			<article class="avd-article-card">
+				<h2 class="article-heading">Aktiviteter</h2>
+				<p class="article-text">Pudelpromenad, utställning eller kurs? Här hittar du våra aktiviteter i norra avdelningen! </p>
+				<a href="https://www.pudelklubben.se/aktivitetsavdelning/aktivitet-norra/"><button>Våra aktiviteter</button></a>
+			</article>
+		</section>
+
+		<?php
 
 			/* Aktuellt post type Loop */
 			$homepageAktuellt = new WP_Query(array(

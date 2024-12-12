@@ -10,10 +10,19 @@ get_header();
       <div class="hero-container">
         <h1 class="avdelning-main-heading">Mellansvenska</h1>
         <h1 class="avdelning-main-heading">avdelningen</h1>
-        <button>Bli medlem</button>
+        <a href="https://www.pudelklubben.se/om-klubben/bli-medlem/"><button>Bli medlem</button></a>
       </div>
     </div>
 	<main id="primary" class="avd-front-page-main">
+    	<!-- Static content  -->
+		
+      <section class="mellansvenska-aktuellt-wrapper">
+			<article class="avd-article-card">
+				<h2 class="article-heading">Aktiviteter</h2>
+				<p class="article-text">Pudelpromenad, utställning eller kurs? Här hittar du våra aktiviteter i mellansvenska avdelningen! </p>
+				<a href="https://www.pudelklubben.se/aktivitetsavdelning/aktivitet-mellansvenska/"><button>Våra aktiviteter</button></a>
+			</article>
+		</section>
 				
 				<?php
 

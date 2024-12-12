@@ -10,12 +10,21 @@ get_header();
       <div class="hero-container">
         <h1 class="avdelning-main-heading">Västra</h1>
         <h1 class="avdelning-main-heading">avdelningen</h1>
-        <button>Bli medlem</button>
+        <a href="https://www.pudelklubben.se/om-klubben/bli-medlem/"><button>Bli medlem</button></a>
       </div>
     </div>
 	<main id="primary" class="avd-front-page-main">
-				
-				<?php
+
+		<!-- Static content  -->
+		<section class="vastra-aktuellt-wrapper">
+			<article class="avd-article-card">
+				<h2 class="article-heading">Aktiviteter</h2>
+				<p class="article-text">Pudelpromenad, utställning eller kurs? Här hittar du våra aktiviteter i västra avdelningen! </p>
+				<a href="https://www.pudelklubben.se/aktivitetsavdelning/aktivitet-vastra/"><button>Våra aktiviteter</button></a>
+			</article>
+		</section>
+
+		<?php
 
 			/* Aktuellt post type Loop */
 			$homepageAktuellt = new WP_Query(array(

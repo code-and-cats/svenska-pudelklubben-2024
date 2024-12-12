@@ -10,7 +10,7 @@ get_header();
       <div class="hero-container">
         <h1 class="white-avd-main-heading">Södra</h1>
         <h1 class="white-avd-main-heading">avdelningen</h1>
-        <button class="whitebtn">Bli medlem</button>
+        <a href="https://www.pudelklubben.se/om-klubben/bli-medlem/"><button class="whitebtn">Bli medlem</button></a>
       </div>
     </div>
 	<main id="primary" class="avd-front-page-main">
@@ -19,8 +19,8 @@ get_header();
 		<section class="sodra-aktuellt-wrapper">
 			<article class="avd-article-card">
 				<h2 class="article-heading">Aktiviteter</h2>
-				<p class="article-text">Pudelpromenad, utställning eller kurs? Här hittar du våra aktiviteter i Södra! </p>
-				<a href="https://www.pudeltest.online/s%C3%B6dra/aktiviteter/"><button>Våra aktiviteter</button></a>
+				<p class="article-text">Pudelpromenad, utställning eller kurs? Här hittar du våra aktiviteter i södra avdelningen! </p>
+				<a href="https://www.pudelklubben.se/aktivitetsavdelning/aktivitet-sodra/"><button>Våra aktiviteter</button></a>
 			</article>
 		</section>
 
