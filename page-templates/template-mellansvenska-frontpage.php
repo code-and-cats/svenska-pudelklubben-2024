@@ -28,7 +28,7 @@ get_header();
 
 			/* Aktuellt post type Loop */
 			$homepageAktuellt = new WP_Query(array(
-				'posts_per_page' => 6,
+				'posts_per_page' => 5,
 				'post_type' => 'mellansvenska'
 			));
 			while($homepageAktuellt->have_posts()) {
