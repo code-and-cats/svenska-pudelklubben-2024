@@ -31,15 +31,8 @@ get_header();
 				'post_type' => 'södra'
 			));
 
-			$post_counter = 0;
 			while($homepageAktuellt->have_posts()) {
-				$homepageAktuellt->the_post();
-				$post_counter++;
-
-				// Skip displaying the first post in the loop
-				if ($post_counter == 1) {
-					continue;
-				}
+			$homepageAktuellt->the_post();
 		?>
 			<section class="sodra-aktuellt-wrapper">
 				<article class="avd-article-card">
