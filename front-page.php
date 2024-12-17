@@ -72,10 +72,10 @@ while($homepageAktuellt->have_posts()) {
    <section class="sponsor-wrapper">
     <h3 class="sponsor-heading">Våra sponsorer</h3>
     <div><a href="https://www.svedea.se/hundforsakring/hundagare/hundklubbar/svenska-pudelklubben?fbclid=IwAR33GfXUp-3UuKC1_uRRGaUbv5tCE9VlYVxVPxMpkTQP1xw7aWwRZLNI4Ug"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/svedea-forsakring-logotyp.png') ?>;" alt="Svedea logo"></a></div>
-    <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/dr-clauders-sverige-960x480-560x280.jpg') ?>;" alt="Dr Clauders logo"></div>
-    <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/4Dogs-logga-genomskinlig-med-svart-text-2048x485.jpg') ?>;" alt="4dogs logo"></div>
-    <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/alwaysyoufriend-2048x2048.png') ?>;" alt="Always your friend logo"></div>
-    <div><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/Lyckliga-Faret-Logga-2048x1034.jpg') ?>;" alt="Lyckliga fåret logo"></div>
+    <div><a href="https://dr-claudersverige.se/"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/dr-clauders-sverige-960x480-560x280.jpg') ?>;" alt="Dr Clauders logo"></a></div>
+    <div><a href="https://www.4dogs.se/"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/4Dogs-logga-genomskinlig-med-svart-text-2048x485.jpg') ?>;" alt="4dogs logo"></a></div>
+    <div><a href="https://www.alwaysyourfriends.com/"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/alwaysyoufriend-2048x2048.png') ?>;" alt="Always your friend logo"></a></div>
+    <div><a href="https://www.lyckliga.nu/"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/Lyckliga-Faret-Logga-2048x1034.jpg') ?>;" alt="Lyckliga fåret logo"></a></div>
 </section>
 
 
