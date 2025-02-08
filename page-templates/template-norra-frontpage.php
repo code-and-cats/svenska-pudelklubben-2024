@@ -10,7 +10,7 @@ get_header();
       <div class="hero-container">
         <h1 class="white-avd-main-heading">Norra</h1>
         <h1 class="white-avd-main-heading">avdelningen</h1>
-        <a href="https://www.pudelklubben.se/om-klubben/bli-medlem/"><button>Bli medlem</button></a>
+        <a href="https://www.pudelklubben.se/om-klubben/bli-medlem/"><button class="whitebtn">Bli medlem</button></a>
       </div>
     </div>
 	<main id="primary" class="avd-front-page-main">
