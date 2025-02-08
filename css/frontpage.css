@@ -17,6 +17,7 @@
 
 .hero-text {
   font-weight: 600;
+  color: white;
 }
 
 /* Typography */
@@ -24,9 +25,16 @@
   font-size: 63px;
   font-weight: 400;
   text-transform: uppercase;
+  color: white;
 }
 
-.secondary-heading,
+.secondary-heading {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
 .article-heading {
   font-size: 24px;
   font-weight: 400;
@@ -71,6 +79,10 @@ button {
   cursor: pointer;
 }
 
+.aktiviteter-fb {
+  padding: 0;
+}
+
 /* Aktuellt loop area */
 .article-card {
   background-color: #dad8cc;
@@ -98,7 +110,7 @@ button {
 
 .sponsor-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1em;
   align-items: center;
   justify-content: center;
@@ -132,6 +144,12 @@ Tablet
 
   .tablet-only {
     display: block;
+  }
+
+  .main-heading,
+  .secondary-heading,
+  .hero-text {
+    color: black;
   }
 
   /* Hero */
