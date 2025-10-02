@@ -2,7 +2,7 @@
 get_header();
 ?>
 <div class="main-content">
-<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/dir-6.jpg') ?>);">
+<div class="hero-wrapper" style="background-image: url(<?php echo get_theme_file_uri('/img/pudelpromenad.jpg') ?>);">
       <div class="hero-container">
         <h1 class="main-heading">Pudeln</h1>
           <h1 class="secondary-heading">variationernas ras</h1>
@@ -29,26 +29,27 @@ get_header();
 </p>
        </div>
      </article>
-     <article class="article-card">
-      <div class="article-content">
-       <h2 class="article-heading">Skaffa pudel</h2>
-       <p class="article-text">
-        Vi har både valphänvisning och omplaceringar inom klubbens regi.
-       </p>
-       <a href="https://www.pudelklubben.se/kopapudel/valpkullar/">
-       <button>Hitta pudel</button></a>
-</div>
-     </article>
-     <article class="article-card">
+          <article class="article-card">
      <div class="article-content">
-       <h2 class="article-heading">Valberedningen söker dig!</h2>
+       <h2 class="article-heading">Bli medlem</h2>
        <p class="article-text">
-        Just nu söker vi flera intresserade som vill bidra i klubbens centralstyrelse!
+     Vill du veta mer om pudeln, lära känna andra pudelintresserade eller hitta på roliga saker med din pudel? Välkommen!
        </p>
-       <a href="https://www.pudelklubben.se/valberedningen-soker-dig/">
-       <button>Läs mer</button></a>
+       <a href="https://www.pudelklubben.se/om-klubben/bli-medlem/">
+       <button>Bli medlem</button></a>
        </div>
      </article>
+     <article class="article-card">
+      <div class="article-content">
+       <h2 class="article-heading">Lycka och jubel - att äga en pudel!</h2>
+       <p class="article-text">
+       Är du nyfiken på pudeln som ras? Vårt informationsblad är nu uppdaterat.
+       </p>
+       <a href="https://www.pudelklubben.se/wp-content/uploads/2025/09/Lycka-och-jubel-att-aga-en-pudel.pdf">
+       <button>Informationsbladet som PDF</button></a>
+
+     </article>
+</div>
      <?php
 
 /* Aktuellt loop for tablet only */
@@ -78,8 +79,9 @@ while($homepageAktuellt->have_posts()) {
     <h3 class="sponsor-heading">Våra sponsorer</h3>
     <div><a href="https://www.svedea.se/hundforsakring/hundagare/hundklubbar/svenska-pudelklubben?fbclid=IwAR33GfXUp-3UuKC1_uRRGaUbv5tCE9VlYVxVPxMpkTQP1xw7aWwRZLNI4Ug"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/svedea-forsakring-logotyp.png') ?>;" alt="Svedea logo"></a></div>
     <div><a href="https://www.4dogs.se/"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/4Dogs-logga-genomskinlig-med-svart-text-2048x485.jpg') ?>;" alt="4dogs logo"></a></div>
-    <div><a href="https://www.alwaysyourfriends.com/"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/alwaysyoufriend-2048x2048.png') ?>;" alt="Always your friend logo"></a></div>
+    <div><a href="https://www.delmardogs.se/"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/4.jpg') ?>;" alt="Always your friend logo"></a></div>
     <div><a href="https://www.lyckliga.nu/"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/Lyckliga-Faret-Logga-2048x1034.jpg') ?>;" alt="Lyckliga fåret logo"></a></div>
+    <div><a href="https://happydog.se/"><img class="sponsor-logo" src="<?php echo get_theme_file_uri('/img/happydog.jpg') ?>;" alt="Happy dog logo"></a></div>
 </section>
 
 
