@@ -110,7 +110,7 @@ button {
 
 .sponsor-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1em;
   align-items: center;
   justify-content: center;
@@ -149,7 +149,7 @@ Tablet
   .main-heading,
   .secondary-heading,
   .hero-text {
-    color: black;
+    color: white;
   }
 
   /* Hero */
