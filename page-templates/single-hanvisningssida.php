@@ -18,6 +18,7 @@ get_header();
 <h3>Regler för valphänvisning</h3>
 <p>Dessa annonser är publicerade och uppdaterade av uppfödarna själva. Klubben tar ner annonser när valpkullen blivit 12 veckor, eller om uppfödaren inte uppdaterat på 3 veckor.</p>
 <p>Valphänvisningsannonser får tidigast publiceras 9 veckor före beräknad födsel. Valpar får hänvisas till och med 6 månaders ålder.</p>
+<p><a href="https://www.pudelklubben.se/wp-content/uploads/2024/11/SPK-Valphanvisningsregler-2024.pdf"><p>Svenska pudelklubbens valphänvisningsregler</a></p>
 <p><a href="https://www.pudelklubben.se/lagg-in-valpkull/"><p>För uppfödare - lägg in kull</a></p>
 </div>
 </div>
